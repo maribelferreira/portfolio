@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;/* Ensure em-based font sizing works in old versions of IE */
+	font-family: 'Roboto', sans-serif;/* Google font */
+	margin: 0;/* Remove the margin in all browsers */
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+header {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+  max-width: 1366px;
+	padding: 1.8% 0;
+	align-items: center;
+}
+
+nav {
+	margin-left: auto;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 28px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;/* Avoid descender space */
+	border: 0;
+}
+
+/* -------------------------- PORTFOLIO GALLERY -------------------------- */
+
+.grid-container {
+  display: grid;
+  max-width: 1336px;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  justify-content: center;
+  padding: 2%;
+}
+.cell {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.cell-1 {
+  background: deepskyblue;
+}
+.cell-2 {
+  background: orangered;
+}
+.cell-3 {
+  background: royalblue;
+}
+.cell-4 {
+  background: gold;
+}
+.cell-5 {
+  background: blueviolet;
+}
+.cell-6 {
+  background: limegreen;
+}
+.cell-7 {
+  background: coral;
+}
+.cell-8 {
+  background: lightseagreen;
+}
+.cell-9 {
+  background: maroon;
+}
