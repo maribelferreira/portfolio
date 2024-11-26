@@ -1,0 +1,39 @@
+<nav class="bg-white shadow-md px-4 py-2">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="/logo.svg" alt="Logo" class="h-8 w-auto" />
+    </div>
+
+    <!-- Mobile menu button -->
+    <label for="nav-toggle" class="cursor-pointer lg:hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <input type="checkbox" id="nav-toggle" class="hidden" />
+
+    <!-- Nav items -->
+    <div class="nav-items text-black">
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#about" class="nav-link">About</a>
+      <button class="bg-blue-600 text-black px-4 py-2 rounded-lg hover:bg-red-500-700 transition-colors">
+        Download CV
+      </button>
+    </div>
+  </div>
+</nav>
+
+<style>
+.nav-items {
+    @apply fixed lg:relative top-16 lg:top-0 left-0 lg:flex items-center gap-8 w-full lg:w-auto bg-gray-400 lg:bg-transparent p-4 lg:p-0 -translate-x-full lg:translate-x-0 transition-transform;
+  }
+  
+  .nav-link {
+    @apply block lg:inline-block py-2 text-gray-700 hover:text-blue-600 transition-colors;
+  }
+  
+  #nav-toggle:checked ~ .nav-items {
+		@apply translate-x-0;
+	}
+</style>
