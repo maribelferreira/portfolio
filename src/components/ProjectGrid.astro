@@ -1,0 +1,80 @@
+---
+import placeholderImage from '../assets/placeholder.png';
+
+const projects = [
+  {
+    title: "Event Booking App – Case Study",
+    image: placeholderImage,
+    link: "/projects/event-booking"
+  },
+  {
+    title: "Radix Website Redesign",
+    image: placeholderImage, 
+    link: "/projects/radix"
+  },
+  {
+    title: "Looloos Booking Form",
+    image: placeholderImage,
+    link: "/projects/looloos"
+  },
+  {
+    title: "Indeed Mobile App Redesign – Case Study",
+    image: placeholderImage,
+    link: "/projects/indeed"
+  },
+  {
+    title: "User Account Dashboard",
+    image: placeholderImage,
+    link: "/projects/dashboard"
+  },
+  {
+    title: "Go Up Page Redesign",
+    image: placeholderImage,
+    link: "/projects/goup"
+  },
+  {
+    title: "Another Project",
+    image: placeholderImage,
+    link: "/projects/another"
+  },
+  {
+    title: "Another Project",
+    image: placeholderImage,
+    link: "/projects/another"
+  },
+  {
+    title: "Another Project",
+    image: placeholderImage,
+    link: "/projects/another"
+  }
+  
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {projects.map(project => (
+    <div>
+      <a 
+        href={project.link}
+        class="bg-white block overflow-hidden rounded-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+      >
+        <div class="relative aspect-video">
+          <img
+            src={project.image.src}
+            alt={project.title}
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </a>
+      <h3 class="mt-4 text-xl font-semibold text-black">
+        {project.title}
+      </h3>
+    </div>
+  ))}
+</div>
+
+<style>
+  .group {
+    background: white;
+  }
+</style>
