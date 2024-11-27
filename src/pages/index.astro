@@ -1,27 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import TopNav from '../components/TopNav.astro';
 import Hero from '../components/Hero.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="My portfolio">
 	<main>
 		<TopNav />
 		<Hero />
 		<ProjectGrid />
+		<Footer />
 	</main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 1440px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 18px;
-		line-height: 1.6;
-	}
-</style>
+

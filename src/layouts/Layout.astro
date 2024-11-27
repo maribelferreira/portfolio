@@ -15,6 +15,9 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
@@ -36,15 +39,16 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #ffffff;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body {
+		font-family: Inter, sans-serif;	
+	}
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 1440px;
+		max-width: calc(100% - 2rem);
+		color: #0f172a;
+		font-size: 17px;
+		line-height: 1.6;
 	}
 </style>
