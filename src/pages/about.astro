@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import portrait from '../assets/portrait.png';
+import TopNav from '../components/TopNav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<TopNav />      
+<Layout title="About Me">
+  <section class="text-gray-600 body-font max-w-7xl mx-auto ">
+    <div class="flex px-5 py-24 md:flex-row flex-col items-center">
+        <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-6">
+            <h1 class="text-2xl font-semibold">
+              I'm Maribel Ferreira, a Product Designer passionate about creating designs that are both visually engaging and intuitive, while satisfying the needs of the customer and end-users.
+            </h1>
+            <p class="text-lg">
+              You're looking at my website, where you can 
+              <a href="/portfolio" class="text-teal-500 hover:text-teal-600">look through my portfolio</a>, and
+              <a href="/cv" class="text-teal-500 hover:text-teal-600">download my CV</a>.
+            </p>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center items-center">
+            <img class="object-cover object-center rounded" alt="hero" src={portrait.src}>
+        </div>
+    </div>
+</section>
+</Layout>
+<Footer />
