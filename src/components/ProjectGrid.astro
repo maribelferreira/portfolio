@@ -1,69 +1,57 @@
 ---
-import placeholderImage from '../assets/placeholder.png';
-import goUpImage from '../assets/go-up.png';
+import letroImage from '../assets/letro.png';
+import awalaImage from '../assets/awala.png';
+import evenergyImage from '../assets/evenergy.png';
+import audistarImage from '../assets/audistar.png';
+import eventBookingImage from '../assets/event-app.png';
+import dashboardImage from '../assets/dashboard.png';
 
 const projects = [
   {
-    title: "Event Booking App – Case Study",
-    image: placeholderImage,
-    link: "/projects/event-booking"
+    title: "Letro App",
+    image: letroImage,
+    link: "/projects/letro"
   },
   {
-    title: "Radix Website Redesign",
-    image: placeholderImage, 
-    link: "/projects/radix"
+    title: "Awala Desktop App",
+    image: awalaImage, 
+    link: "/projects/awala"
   },
   {
-    title: "Looloos Booking Form",
-    image: placeholderImage,
-    link: "/projects/looloos"
+    title: "EV Energy App",
+    image: evenergyImage,
+    link: "/projects/evenergy"
   },
   {
-    title: "Indeed Mobile App Redesign – Case Study",
-    image: placeholderImage,
-    link: "/projects/indeed"
+    title: "Event Booking App",
+    image: eventBookingImage,
+    link: "/projects/event-app"
   },
   {
     title: "User Account Dashboard",
-    image: placeholderImage,
+    image: dashboardImage,
     link: "/projects/dashboard"
   },
   {
-    title: "Go Up Page Redesign",
-    image: goUpImage,
-    link: "/projects/goup"
+    title: "Audistar Website Redesign",
+    image: audistarImage,
+    link: "/projects/audistar"
   },
-  {
-    title: "SEO Case Study Page Redesign",
-    image: placeholderImage,
-    link: "/projects/another"
-  },
-  {
-    title: "Design & Implementation of Dance Venue",
-    image: placeholderImage,
-    link: "/projects/another"
-  },
-  {
-    title: "Khan Landing Page",
-    image: placeholderImage,
-    link: "/projects/another"
-  }
-  
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
   {projects.map(project => (
     <div>
       <a 
         href={project.link}
-        class="bg-white block overflow-hidden rounded-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+        class="bg-white block overflow-hidden rounded-3xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-black"
       >
-        <div class="relative aspect-video">
+        <div class="relative">
           <img
             src={project.image.src}
             alt={project.title}
-            class="h-full w-full object-cover"
+            class="object-cover"
           />
         </div>
       </a>
