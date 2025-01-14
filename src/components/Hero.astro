@@ -1,7 +1,21 @@
 <div class="flex items-center">
-    <div class="text-center mx-auto mt-16 mb-16 max-w-6xl">
-        <h1 class="text-2xl font-bold lg:leading-normal sm:text-3xl md:text-4xl font-title">
-            Hi! 👋 I'm a London-based Product Designer dedicated to improving digital products through thoughtful design.
+    <div class="text-center mx-auto mb-20 mt-12 last:max-w-6xl space-y-6">
+        <h1 class="text-2xl font-bold lg:leading-tight sm:text-3xl md:text-[135px] font-title">
+            Hi! 👋 I'm Maribel
+            <br>
+            A <span class="text-[#8b7bf4]">Product Designer</span>
         </h1>
+        <p class="text-2xl font-regular">I'm passionate about crafting experiences that are engaging, accessible, and user-centric.</p>
+    </div>
+</div>
+
+<div class="bg-[#262330] py-4 mb-16">
+    <div class=" max-w-7xl mx-auto flex justify-between items-center text-md">
+        {['UX/UI design', 'User Research', 'Product Strategy', 'Web Development', 'Visual Design', 'Branding'].map((skill, i, arr) => (
+            <>
+                <span>{skill}</span>
+                {i < arr.length - 1 && <img src="/src/assets/star.svg" class="w-3 h-3" alt="" />}
+            </>
+        ))}
     </div>
 </div>

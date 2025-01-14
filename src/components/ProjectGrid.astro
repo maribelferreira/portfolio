@@ -1,51 +1,58 @@
 ---
 import letroImage from '../assets/letro.png';
-import awalaImage from '../assets/awala.png';
-import evenergyImage from '../assets/evenergy.png';
+import awalaImage from '../assets/awala-website.png';
+import evenergyImage from '../assets/ev-energy.png';
 import audistarImage from '../assets/audistar.png';
-import eventBookingImage from '../assets/event-app.png';
-import dashboardImage from '../assets/dashboard.png';
+import awaladDesktopImage from '../assets/awala-desktop.png';    
+import naturalSafarisImage from '../assets/natural-safaris.png';
 
 const projects = [
   {
-    title: "Letro App",
+    title: "Letro Android App",
+    description: "A service like email, but end-to-end encrypted, spam-free, phishing-free and works without the Internet.",
     image: letroImage,
     link: "/projects/letro"
   },
   {
-    title: "Awala Desktop App",
+    title: "Awala Website Redesign",
+    description: "Designed and developed a responsive website for Awala, the all in one app to bypass Internet censorship",
     image: awalaImage, 
-    link: "/projects/awala"
+    link: "/projects/awala-website"
   },
   {
     title: "EV Energy App",
-    image: evenergyImage,
-    link: "/projects/evenergy"
+    description: "Smart EV Charging Solutions",
+    image:  evenergyImage,
+    link: "/projects/ev-energy"
   },
   {
-    title: "Event Booking App",
-    image: eventBookingImage,
-    link: "/projects/event-app"
+    title: "Awala Desktop App",
+    description: "UX/UI for Awala Desktop App",
+    image: awaladDesktopImage,
+    link: "/projects/awala-desktop"
   },
+
   {
-    title: "User Account Dashboard",
-    image: dashboardImage,
-    link: "/projects/dashboard"
+    title: "Natural High Safaris",
+    description: "Tailor-made safaris & wilderness travel",
+    image: naturalSafarisImage,
+    link: "/projects/natural-safaris"
   },
   {
     title: "Audistar Website Redesign",
+    description: "Redesign of the website of Audistar, a Marketing solutions & media auditing company.",
     image: audistarImage,
-    link: "/projects/audistar"
+    link: "/projects/audistar-website"
   },
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1440px] mx-auto">
   {projects.map(project => (
     <div>
       <a 
         href={project.link}
-        class="bg-white block overflow-hidden rounded-3xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-black"
+        class="bg-white block overflow-hidden rounded-3xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
       >
         <div class="relative">
           <img
@@ -55,15 +62,12 @@ const projects = [
           />
         </div>
       </a>
-      <h3 class="mt-4 text-xl font-semibold">
+      <h3 class="mt-4 text-2xl font-semibold">
         {project.title}
       </h3>
+      <p class="text-lg font-regular my-2 leading-normal text-[#A8A8A8]">
+        {project.description}
+      </p>
     </div>
   ))}
 </div>
-
-<style>
-  .group {
-    background: white;
-  }
-</style>
