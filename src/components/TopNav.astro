@@ -17,15 +17,18 @@ const isActive = (path: string) =>
     </div>
 
     <!-- Mobile menu button -->
+    <input type="checkbox" id="nav-toggle" class="hidden" />
     <label for="nav-toggle" class="lg:hidden cursor-pointer">
-      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 text-white hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
+      <svg class="w-6 h-6 text-white close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
     </label>
-    <input type="checkbox" id="nav-toggle" class="hidden" />
 
     <!-- Nav items -->
-    <div class="nav-items absolute lg:relative right-8 top-20 lg:top-0 bg-[#25212e] lg:bg-transparent p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none hidden lg:block">
+    <div class="nav-items absolute lg:relative right-8 top-20 lg:top-0 bg-[#25212e] lg:bg-transparent p-8 lg:p-0 rounded-lg shadow-lg lg:shadow-none hidden lg:block">
       <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
         <li><a href="/" class={isActive("/")}>Portfolio</a></li>
         <li><a href="/about" class={isActive("/about")}>About</a></li>
@@ -36,7 +39,19 @@ const isActive = (path: string) =>
 </nav>
 
 <style>
+  .close-icon {
+    display: none;
+  }
+
   #nav-toggle:checked ~ .nav-items {
     display: block;
+  }
+  
+  #nav-toggle:checked + label .hamburger-icon {
+    display: none;
+  }
+  
+  #nav-toggle:checked + label .close-icon {
+    display: inline-block;
   }
 </style>
