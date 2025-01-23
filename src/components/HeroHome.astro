@@ -1,3 +1,6 @@
+---
+import starIcon from '../assets/star.svg';
+---
 <div class="flex items-center">
     <div class="text-center mb-20 mt-12 max-w-7xl mx-auto space-y-6 px-8">
         <h1 class="text-2xl font-bold lg:leading-tight sm:text-3xl md:text-[135px] font-title">
@@ -14,7 +17,7 @@
         {['UX/UI design', 'User Research', 'Product Strategy', 'Web Development', 'Visual Design', 'Branding'].map((skill, i, arr) => (
             <>
                 <span>{skill}</span>
-                {i < arr.length - 1 && <img src="/src/assets/star.svg" class="w-3 h-3" alt="" />}
+                {i < arr.length - 1 && <img src={starIcon.src} class="w-3 h-3" alt="Star icon" />}
             </>
         ))}
     </div>
