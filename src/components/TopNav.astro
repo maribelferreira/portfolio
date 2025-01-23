@@ -2,7 +2,11 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 const currentPath = Astro.url.pathname;
+
+const isActive = (path: string) => 
+  currentPath === path ? "text-white bg-[#3F3A4A] hover:text-[#9383f7] px-4 py-2 rounded-full" : "";
 ---
+
 <nav class="py-8 max-w-screen-2xl mx-auto px-8">
   <div class="flex justify-between items-center">
     <!-- Logo -->
@@ -10,37 +14,13 @@ const currentPath = Astro.url.pathname;
       <a href="/"><Image src={logo} alt="Logo" class="h-6 lg:h-8 w-auto" /></a>
     </div>
 
-    <!-- Mobile menu button -->
-    <label for="nav-toggle" class="cursor-pointer lg:hidden">
-      <svg class="w-6 h-6" fill="black" stroke="black" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </label>
-    <input type="checkbox" id="nav-toggle" class="hidden" />
-
     <!-- Nav items -->
-    <div class="nav-items">
-      <a href="/" class={`nav-link ${currentPath === "/" ? "active" : ""}`}>Portfolio</a>
-      <a href="/about" class={`nav-link ${currentPath === "/about" ? "active" : ""}`}>About</a>
-      <a href="/cv" class={`nav-link ${currentPath === "/cv" ? "active" : ""}`}>CV</a>
+    <div class="text-md text-white">
+      <ul class="flex flex-row space-x-8">
+        <li><a href="/" class={isActive("/")}>Portfolio</a></li>
+        <li><a href="/about" class={isActive("/about")}>About</a></li>
+        <li><a href="/cv" class={isActive("/cv")}>CV</a></li>
+      </ul>
     </div>
   </div>
 </nav>
-
-<style>
-.nav-items {
-    @apply fixed lg:relative top-16 lg:top-0 left-0 lg:flex items-center gap-8 w-full lg:w-auto bg-gray-400 lg:bg-transparent p-4 lg:p-0 hidden transition-all;
-  }
-  
-  .nav-link {
-    @apply block lg:inline-block py-2 text-white hover:text-[#8b7bf4] transition-colors;
-  }
-  
-  #nav-toggle:checked ~ .nav-items {
-    @apply block;
-  }
-  
-  .nav-link.active {
-    @apply text-white font-medium bg-[#393447] px-4 py-2 rounded-full hover:text-[#9383f7];
-  }
-</style>
