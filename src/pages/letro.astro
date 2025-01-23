@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
 import SingleColumn from '../components/SingleColumn.astro';
+import TwoColumn from '../components/TwoColumn.astro';
 ---
 
 <Layout title="Letro Android App" description="End-to-end encrypted messaging that works without internet">
@@ -54,6 +55,17 @@ import SingleColumn from '../components/SingleColumn.astro';
 	imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
 	imageAlt={["Letro app interface", "Letro app interface"]}
 	topPadding={false}
+	/>
+	<TwoColumn variant="2x2"
+		leftImage="/src/assets/ev-energy.png"
+		rightImage="/src/assets/ev-energy.png"
+		leftAlt="Letro app interface"
+		rightAlt="Letro app interface"
+		title="Solution"
+		description={[
+			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
+			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
+		]}
 	/>
 	<Footer />
 </Layout>

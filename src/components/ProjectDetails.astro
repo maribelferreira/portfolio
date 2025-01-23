@@ -12,9 +12,9 @@ interface Props {
 const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText } = Astro.props;
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] max-w-screen-2xl mx-auto px-8 gap-24 pb-14 border-b border-neutral-700">
+<div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] max-w-screen-2xl mx-auto px-6 md:px-8 gap-8 md:gap-16 pb-10 md:pb-14 border-b border-neutral-700">
   <div>
-    <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+    <h2 class="text-xl md:text-2xl font-semibold mb-4">Overview</h2>
     {Array.isArray(overview) ? (
       overview.map((paragraph) => (
         <p class="mb-6" set:html={paragraph} />
@@ -34,7 +34,7 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
 
   <div class="space-y-8">
     <div>
-      <h2 class="text-2xl font-semibold mb-4">Role</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Role</h2>
       {Array.isArray(role) ? (
         role.map(r => <p class="mb-4">{r}</p>)
       ) : (
@@ -50,12 +50,12 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
     </div>
 
     <div>
-      <h2 class="text-2xl font-semibold mb-4">Tools</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Tools</h2>
       <p>{tools}</p>
     </div>
 
     <div>
-      <h2 class="text-2xl font-semibold mb-4">Timeline</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Timeline</h2>
       <p>{timeline}</p>
     </div>
   </div>
