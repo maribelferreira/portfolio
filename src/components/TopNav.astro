@@ -3,10 +3,13 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 const currentPath = Astro.url.pathname;
 
-const isActive = (path: string) => 
-  currentPath === path 
+const isActive = (path: string) => {
+  const normalizedCurrent = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
+  const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path;
+  return normalizedCurrent === normalizedPath
     ? "lg:text-white lg:bg-[#3F3A4A] lg:hover:text-[#9383f7] lg:px-4 lg:py-2 lg:rounded-full text-[#9383f7]" 
     : "";
+}
 ---
 
 <nav class="py-8 max-w-screen-2xl mx-auto px-6 lg:px-8">
@@ -30,9 +33,9 @@ const isActive = (path: string) =>
     <!-- Nav items -->
     <div class="nav-items absolute lg:relative right-8 top-20 lg:top-0 bg-[#25212e] lg:bg-transparent p-8 lg:p-0 rounded-lg shadow-lg lg:shadow-none hidden lg:block">
       <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
-        <li><a href="/" class={isActive("/")}>Portfolio</a></li>
-        <li><a href="/about" class={isActive("/about")}>About</a></li>
-        <li><a href="/cv" class={isActive("/cv")}>CV</a></li>
+        <li><a href="/" class={`nav-link ${isActive("/")}`}>Portfolio</a></li>
+        <li><a href="/about" class={`nav-link ${isActive("/about")}`}>About</a></li>
+        <li><a href="/cv" class={`nav-link ${isActive("/cv")}`}>CV</a></li>
       </ul>
     </div>
   </div>
@@ -53,5 +56,9 @@ const isActive = (path: string) =>
   
   #nav-toggle:checked + label .close-icon {
     display: inline-block;
+  }
+
+  .nav-link {
+    @apply hover:text-[#9383f7] transition-colors;
   }
 </style>
