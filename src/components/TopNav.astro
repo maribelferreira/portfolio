@@ -4,7 +4,9 @@ import logo from '../assets/logo.png';
 const currentPath = Astro.url.pathname;
 
 const isActive = (path: string) => 
-  currentPath === path ? "text-white bg-[#3F3A4A] hover:text-[#9383f7] px-4 py-2 rounded-full" : "";
+  currentPath === path 
+    ? "lg:text-white lg:bg-[#3F3A4A] lg:hover:text-[#9383f7] lg:px-4 lg:py-2 lg:rounded-full text-[#9383f7]" 
+    : "";
 ---
 
 <nav class="py-8 max-w-screen-2xl mx-auto px-8">
@@ -14,9 +16,17 @@ const isActive = (path: string) =>
       <a href="/"><Image src={logo} alt="Logo" class="h-6 lg:h-8 w-auto" /></a>
     </div>
 
+    <!-- Mobile menu button -->
+    <label for="nav-toggle" class="lg:hidden cursor-pointer">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <input type="checkbox" id="nav-toggle" class="hidden" />
+
     <!-- Nav items -->
-    <div class="text-md text-white">
-      <ul class="flex flex-row space-x-8">
+    <div class="nav-items absolute lg:relative right-8 top-20 lg:top-0 bg-[#25212e] lg:bg-transparent p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none hidden lg:block">
+      <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
         <li><a href="/" class={isActive("/")}>Portfolio</a></li>
         <li><a href="/about" class={isActive("/about")}>About</a></li>
         <li><a href="/cv" class={isActive("/cv")}>CV</a></li>
@@ -24,3 +34,9 @@ const isActive = (path: string) =>
     </div>
   </div>
 </nav>
+
+<style>
+  #nav-toggle:checked ~ .nav-items {
+    display: block;
+  }
+</style>
