@@ -49,7 +49,7 @@ const projects = [
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-2xl mx-auto px-8 pt-4 pb-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-screen-2xl mx-auto px-8 pt-4 pb-16">
   {projects.map(project => (
     <div>
       <a 
@@ -67,7 +67,7 @@ const projects = [
       <h3 class="mt-4 text-2xl font-semibold">
         {project.title}
       </h3>
-      <p class="text-lg font-regular my-2 leading-normal">
+      <p class="text-md lg:text-lg font-regular my-2 leading-normal">
         {project.description}
       </p>
     </div>
