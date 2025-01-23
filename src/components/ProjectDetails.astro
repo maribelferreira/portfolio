@@ -1,0 +1,62 @@
+---
+interface Props {
+  overview: string[];
+  role: string | string[];
+  responsibilities?: string[];
+  tools: string;
+  timeline: string;
+  liveUrl?: string;
+  buttonText?: string;
+}
+
+const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText } = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] max-w-screen-2xl mx-auto px-8 gap-24 pb-14 border-b border-neutral-700">
+  <div>
+    <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+    {Array.isArray(overview) ? (
+      overview.map((paragraph) => (
+        <p class="mb-6" set:html={paragraph} />
+      ))
+    ) : (
+      <p class="mb-6">{overview}</p>
+    )}
+    {liveUrl && (
+      <button
+        onclick={`window.open('${liveUrl}', '_blank', 'noopener,noreferrer')`}
+        class="inline-block px-6 py-2 bg-purple-500 rounded-full text-white hover:bg-purple-600 transition-colors"
+      >
+        {buttonText || 'View live site'}
+      </button>
+    )}
+  </div>
+
+  <div class="space-y-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Role</h2>
+      {Array.isArray(role) ? (
+        role.map(r => <p class="mb-4">{r}</p>)
+      ) : (
+        <p >{role}</p>
+      )}
+      {responsibilities && responsibilities.length > 0 && (
+        <ul class="list-disc ml-6 space-y-4">
+          {responsibilities.map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Tools</h2>
+      <p>{tools}</p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Timeline</h2>
+      <p>{timeline}</p>
+    </div>
+  </div>
+</div>

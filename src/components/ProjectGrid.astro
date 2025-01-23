@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import letroImage from '../assets/letro.png';
 import awalaImage from '../assets/awala-website.png';
 import evenergyImage from '../assets/ev-energy.png';
@@ -6,57 +7,58 @@ import audistarImage from '../assets/audistar.png';
 import awaladDesktopImage from '../assets/awala-desktop.png';    
 import naturalSafarisImage from '../assets/natural-safaris.png';
 
+
 const projects = [
   {
     title: "Letro Android App",
     description: "A service like email, but end-to-end encrypted, spam-free, phishing-free and works without the Internet.",
     image: letroImage,
-    link: "/projects/letro"
+    link: "/"
   },
   {
     title: "Awala Website Redesign",
     description: "Designed and developed a responsive website for Awala, the all in one app to bypass Internet censorship",
     image: awalaImage, 
-    link: "/projects/awala-website"
+    link: "/"
   },
   {
     title: "EV Energy App",
     description: "Smart EV Charging Solutions",
     image:  evenergyImage,
-    link: "/projects/ev-energy"
+    link: "/"
   },
   {
     title: "Awala Desktop App",
     description: "UX/UI for Awala Desktop App",
     image: awaladDesktopImage,
-    link: "/projects/awala-desktop"
+    link: "/"
   },
 
   {
     title: "Natural High Safaris",
     description: "Tailor-made safaris & wilderness travel",
     image: naturalSafarisImage,
-    link: "/projects/natural-safaris"
+    link: "/"
   },
   {
     title: "Audistar Website Redesign",
     description: "Redesign of the website of Audistar, a Marketing solutions & media auditing company.",
     image: audistarImage,
-    link: "/projects/audistar-website"
+    link: "/"
   },
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-2xl mx-auto px-8 pt-4 pb-16">
   {projects.map(project => (
     <div>
       <a 
         href={project.link}
-        class="bg-white block overflow-hidden rounded-3xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+        class="block overflow-hidden rounded-3xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
       >
         <div class="relative">
-          <img
-            src={project.image.src}
+          <Image
+            src={project.image}
             alt={project.title}
             class="object-cover"
           />
@@ -65,7 +67,7 @@ const projects = [
       <h3 class="mt-4 text-2xl font-semibold">
         {project.title}
       </h3>
-      <p class="text-lg font-regular my-2 leading-normal text-[#A8A8A8]">
+      <p class="text-lg font-regular my-2 leading-normal">
         {project.description}
       </p>
     </div>

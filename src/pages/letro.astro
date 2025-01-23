@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import Plain from '../components/plain.astro';
+---
+
+<Layout title="Letro Android App" description="End-to-end encrypted messaging that works without internet">
+	<TopNav />
+	<HeroProject 
+		title="Letro Android App" 
+		subtitle="End-to-end encrypted messaging that works without internet"
+		imageSrc="/src/assets/feather.png"
+		imageAlt="Letro Android App Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, Miro, Illustrator' 
+	timeline='2023 - 2024' 
+	role={[
+		'As the UX/UI Designer, I led the end-to-end design process, including:',
+	]}
+	responsibilities={[
+	'Collaborating closely with the developer and CEO to define and refine features for the MVP and beyond.', 
+	'Conducting user research, usability testing, and competitor analysis.', 
+	'Designing information architecture, wireframes, prototypes, and the visual language of the final design.', 
+	'Creating a scalable design system and ensuring accessibility (A11y) enhancing usability for all.', 
+	'Documenting designs, supporting development, and iterating throughout the process.', 
+	]}
+	overview={[
+		"Letro is a service like email, but it is designed to solve the <strong>challenges we face in the 21st century</strong>.",
+		"Like email, Letro is <em>decentralised</em> and based on open standards. Unlike email, all messages are <strong>end-to-end encrypted</strong>, spamming and phishing are virtually impossible.",
+		"Users can send and receive messages even if they do not have access to the Internet. Learn more about it on the <a href='https://letro.app' class='text-blue-400 hover:underline'>official website</a>."
+	]}
+	liveUrl='https://play.google.com/store/apps/details?id=tech.relaycorp.letro&hl=en'
+	buttonText='See Android Letro app'
+	/>
+	<Plain 
+		title="Challenge" 
+		description={[
+			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
+			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
+		]}
+		imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
+		imageAlt={["Letro app interface", "Letro app interface"]}
+	/>
+	<Plain 
+	title="Challenge" 
+		description={[
+			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
+			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
+		]}
+	imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
+	imageAlt={["Letro app interface", "Letro app interface"]}
+	topPadding={false}
+	/>
+	<Footer />
+</Layout>
