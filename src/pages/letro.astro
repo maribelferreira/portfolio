@@ -4,7 +4,7 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import Plain from '../components/plain.astro';
+import SingleColumn from '../components/SingleColumn.astro';
 ---
 
 <Layout title="Letro Android App" description="End-to-end encrypted messaging that works without internet">
@@ -36,7 +36,7 @@ import Plain from '../components/plain.astro';
 	liveUrl='https://play.google.com/store/apps/details?id=tech.relaycorp.letro&hl=en'
 	buttonText='See Android Letro app'
 	/>
-	<Plain 
+	<SingleColumn 
 		title="Challenge" 
 		description={[
 			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
@@ -45,7 +45,7 @@ import Plain from '../components/plain.astro';
 		imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
 		imageAlt={["Letro app interface", "Letro app interface"]}
 	/>
-	<Plain 
+	<SingleColumn 
 	title="Challenge" 
 		description={[
 			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
