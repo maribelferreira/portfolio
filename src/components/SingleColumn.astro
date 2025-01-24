@@ -1,8 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface Props {
     title?: string;
     description?: string | string[]; // Can be a single string or array of paragraphs
-    imageSrc: string[];
+    imageSrc: ImageMetadata[];
     imageAlt?: string[];
     topPadding?: boolean;
 }
@@ -14,7 +17,7 @@ const {
     imageAlt = imageSrc.map(() => "Project image"),
     topPadding = true
 } = Astro.props;
-import { Image } from 'astro:assets';
+
 ---
 <section class={`pb-14 ${topPadding ? 'pt-14' : ''}`}>
     <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left">

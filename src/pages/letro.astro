@@ -6,6 +6,8 @@ import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
 import SingleColumn from '../components/SingleColumn.astro';
 import TwoColumn from '../components/TwoColumn.astro';
+import FeatherImage from '../assets/feather.png';
+import LetroImage from '../assets/letro.png';
 ---
 
 <Layout title="Letro Android App" description="End-to-end encrypted messaging that works without internet">
@@ -13,7 +15,7 @@ import TwoColumn from '../components/TwoColumn.astro';
 	<HeroProject 
 		title="Letro Android App" 
 		subtitle="End-to-end encrypted messaging that works without internet"
-		imageSrc="/src/assets/feather.png"
+		imageSrc={FeatherImage}
 		imageAlt="Letro Android App Hero Image"
 	/>
 	<ProjectDetails 
@@ -43,7 +45,7 @@ import TwoColumn from '../components/TwoColumn.astro';
 			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
 			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
 		]}
-		imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
+		imageSrc={[FeatherImage, FeatherImage]}
 		imageAlt={["Letro app interface", "Letro app interface"]}
 	/>
 	<SingleColumn 
@@ -52,20 +54,16 @@ import TwoColumn from '../components/TwoColumn.astro';
 			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
 			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
 		]}
-	imageSrc={["/src/assets/feather.png", "/src/assets/feather.png"]}
+	imageSrc={[FeatherImage, FeatherImage]}
 	imageAlt={["Letro app interface", "Letro app interface"]}
 	topPadding={false}
 	/>
-	<TwoColumn variant="2x2"
-		leftImage="/src/assets/ev-energy.png"
-		rightImage="/src/assets/ev-energy.png"
+	<TwoColumn 
+		variant="2x1"
+		leftImage={LetroImage}
+		rightImage={LetroImage}
 		leftAlt="Letro app interface"
 		rightAlt="Letro app interface"
-		title="Solution"
-		description={[
-			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
-			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
-		]}
 	/>
 	<Footer />
 </Layout>
