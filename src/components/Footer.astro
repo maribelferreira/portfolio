@@ -1,6 +1,13 @@
-<footer class="flex flex-col gap-8 md:flex-row justify-between items-center px-6 lg:px-8 py-16 mt-8 border-t border-[#2E2E2E] max-w-screen-2xl mx-auto text-[#A8A8A8]">
+<footer class="flex flex-col gap-8 md:flex-row justify-between items-center px-6 lg:px-8 py-16 border-t border-[#2E2E2E] max-w-screen-2xl mx-auto">
   <div class="flex flex-col items-center md:items-start order-1 md:order-1">
-    <p><a href="mailto:me@maribel.design">me@maribel.design</a></p>
+    <p>
+      <a href="mailto:me@maribel.design" class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#96A1FF" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+        me@maribel.design
+      </a>
+    </p>
   </div>
 
   <p class="text-md text-center order-3 md:order-2">© Copyright 2025. Designed & Developed by Maribel Ferreira.</p>
@@ -24,7 +31,7 @@
       }
     ].map(({ href, label, path }) => (
       <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
-        <svg class="w-6 h-6 fill-neutral-500 hover:fill-neutral-600" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 fill-neutral-500 hover:fill-[#BAC1FF]" viewBox="0 0 24 24">
           <path d={path}/>
         </svg>
       </a>
