@@ -82,7 +82,19 @@ import veraidImage from '../assets/veraid.png';
     </div>
     <p class="text-center text-2xl font-regular text-gray-300 mb-16">A collection of projects I've built for fun and learning.</p>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-screen-2xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-screen-2xl mx-auto">
+  
+      <a href="https://github.com/maribelferreira/ai-recipe-generator" class="overflow-hidden group">
+        <div class="overflow-hidden rounded-3xl">
+          <Image 
+            src={aiRecipesImage}
+            alt="Bento-ya project" 
+            class="w-full transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <h3 class="mt-6 text-2xl font-semibold">Lunari (In progress)</h3>
+        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Designing and developing an open-source, privacy-first period tracking app with local-only data storage.</p>
+      </a>
   
       <a href="https://github.com/maribelferreira/ai-recipe-generator" class="overflow-hidden group">
         <div class="overflow-hidden rounded-3xl">
@@ -93,9 +105,8 @@ import veraidImage from '../assets/veraid.png';
           />
         </div>
         <h3 class="mt-6 text-2xl font-semibold">AI recipes generator web app</h3>
-        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Designed and implemented a web app that allows users to generate recipes based on their dietary preferences and ingredients.</p>
+        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Created an AI recipe generator that integrates GPT-4 to generate recipes.</p>
       </a>
-  
       <a href="https://github.com/maribelferreira/weather-web-app" class="overflow-hidden group">
         <div class="overflow-hidden rounded-3xl">
           <Image 
@@ -105,20 +116,7 @@ import veraidImage from '../assets/veraid.png';
           />
         </div>
         <h3 class="mt-6 text-2xl font-semibold">Weather Web App</h3>
-        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Designed and implemented a dynamic web application designed to provide real-time weather information for any given city.</p>
-      </a>
-    </div>
-  
-    <div class="text-center mt-16">
-      <a href="/portfolio" class="relative inline-block group text-lg font-medium px-8 py-4 rounded-full transition-all duration-300">
-        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-[#1cff6f] via-[#6d3bf6] to-[#00ff5e] animate-gradient bg-[length:200%_100%]"></span>
-        <span class="absolute inset-[2px] rounded-full bg-[#18151F] transition-all duration-300"></span>
-        <span class="relative flex items-center gap-4 text-white">
-          View all projects
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-0 h-5 group-hover:w-5 transition-all duration-300 overflow-hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
-        </span>
+        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Built a dynamic web application that provides real-time weather information.</p>
       </a>
     </div>
   </section>
