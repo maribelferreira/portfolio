@@ -23,12 +23,16 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
       <p class="mb-6">{overview}</p>
     )}
     {liveUrl && (
-      <button
-        onclick={`window.open('${liveUrl}', '_blank', 'noopener,noreferrer')`}
-        class="inline-block px-6 py-2  bg-[#8B7BF4] rounded-full text-[#18151F] hover:bg-[#a89bff] transition-colors"
-      >
-        {buttonText || 'View live site'}
-      </button>
+      <a href="https://letro.app/en/" class="relative inline-block group text-lg font-medium px-8 py-4 rounded-full transition-all duration-300" target="_blank">
+        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-[#1cff6f] via-[#6d3bf6] to-[#00ff5e] animate-gradient bg-[length:200%_100%]"></span>
+        <span class="absolute inset-[2px] rounded-full bg-[#18151F] transition-all duration-300"></span>
+        <span class="relative flex items-center gap-4 text-white">
+          {buttonText}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-0 h-5 group-hover:w-5 transition-all duration-300 overflow-hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </span>
+      </a>
     )}
   </div>
 

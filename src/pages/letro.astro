@@ -8,27 +8,31 @@ import SingleColumn from '../components/SingleColumn.astro';
 import TwoColumn from '../components/TwoColumn.astro';
 import FeatherImage from '../assets/feather.png';
 import LetroImage from '../assets/letro.png';
+import GoogleListingImage from '../assets/google-listings.png';
+import OnboardingImage from '../assets/onboarding.png';
+import LetroFeaturedImage from '../assets/letro-featured.png';
 ---
 
 <Layout title="Letro Android App" description="Android app for end-to-end encrypted messaging that works without internet">
 	<TopNav />
 	<HeroProject 
 		title="Letro Android App" 
-		subtitle="Like email, but end-to-end encrypted, spam-free, phishing-free and works without the Internet."
-		imageSrc={FeatherImage}
+		subtitle="Designed an Android app that is like email, but end-to-end encrypted and works without the Internet."
+		imageSrc={LetroFeaturedImage}
 		imageAlt="Letro Android App Hero Image"
 	/>
 	<ProjectDetails 
-	tools='Figma, Miro, Illustrator' 
+	tools='Figma, FigmaJam, Maze, Illustrator, After Effects, Lottie.' 
 	timeline='2023 - 2024' 
 	role={[
-		'As the UX/UI Designer, I led the end-to-end design process, including:',
+		'As the sole Product Designer, I led the entire UX/UI and branding design process, including:',
 	]}
 	responsibilities={[
-	'Collaborating closely with the developer and CEO to define and refine features for the MVP and beyond.', 
+	'MVP scoping with the developer and CEO.', 
 	'Conducting user research, usability testing, and competitor analysis.', 
-	'Designing information architecture, wireframes, prototypes, and the visual language of the final design.', 
-	'Creating a scalable design system and ensuring accessibility (A11y).', 
+	'Designing information architecture, wireframes, prototypes, and the visual language.', 
+	'Creating a scalable design system.', 
+	'Custom illustrations and animations.',
 	'Documenting designs, supporting development, and iterating throughout the process.', 
 	]}
 	overview={[
@@ -36,7 +40,7 @@ import LetroImage from '../assets/letro.png';
 		"Like email, Letro is <em>decentralised</em> and based on open standards. Unlike email, all messages are <strong>end-to-end encrypted</strong>, spamming and phishing are virtually impossible.",
 		"Users can send and receive messages even if they do not have access to the Internet. Learn more about it on the <a href='https://letro.app' class='text-blue-400 hover:underline'>official website</a>."
 	]}
-	liveUrl='https://play.google.com/store/apps/details?id=tech.relaycorp.letro&hl=en'
+	liveUrl='https://letro.app/en/'
 	buttonText='See Android Letro app'
 	/>
 	<SingleColumn 
@@ -45,7 +49,7 @@ import LetroImage from '../assets/letro.png';
 			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
 			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
 		]}
-		imageSrc={[FeatherImage, FeatherImage]}
+		imageSrc={[OnboardingImage, GoogleListingImage]}
 		imageAlt={["Letro app interface", "Letro app interface"]}
 	/>
 	<SingleColumn 
