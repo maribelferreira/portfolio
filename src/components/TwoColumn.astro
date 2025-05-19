@@ -7,9 +7,12 @@ interface Props {
   rightImage: ImageMetadata;
   leftAlt?: string;
   rightAlt?: string;
+  leftCaption?: string;
+  rightCaption?: string;
   title?: string;
   description?: string | string[];
   variant?: '2x1' | '2x2';
+  noPadding?: boolean;
 }
 
 const { 
@@ -17,12 +20,15 @@ const {
   rightImage, 
   leftAlt = '', 
   rightAlt = '', 
+  leftCaption,
+  rightCaption,
   title, 
   description,
-  variant = '2x2'
+  variant = '2x2',
+  noPadding = false
 } = Astro.props;
 ---
-<div class={`max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left ${(title || description) ? 'mb-8' : ''}`}>
+<div class={`max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left${noPadding ? '' : 'pt-12'} ${(title || description) ? 'mb-8' : ''}`}>
     {title && <h2 class="text-xl md:text-4xl font-semibold mb-4">{title}</h2>}
     {description && (
         Array.isArray(description) ? (
@@ -41,6 +47,7 @@ const {
       alt={leftAlt}
       class="w-full"
     />
+    {leftCaption && <p class="text-sm text-center mt-2 text-gray-600">{leftCaption}</p>}
   </div>
   <div>
     <Image 
@@ -48,6 +55,7 @@ const {
       alt={rightAlt}
       class="w-full"
     />
+    {rightCaption && <p class="text-sm text-center mt-2 text-gray-600">{rightCaption}</p>}
   </div>
   {variant === '2x2' && (
     <>
@@ -57,6 +65,7 @@ const {
           alt={leftAlt}
           class="w-full"
         />
+        {leftCaption && <p class="text-sm text-center mt-2 text-gray-600">{leftCaption}</p>}
       </div>
       <div>
         <Image 
@@ -64,6 +73,7 @@ const {
           alt={rightAlt}
           class="w-full"
         />
+        {rightCaption && <p class="text-sm text-center mt-2 text-gray-600">{rightCaption}</p>}
       </div>
     </>
   )}

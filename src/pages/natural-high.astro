@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import TwoColumn from '../components/TwoColumn.astro';
+import SingleColumn from '../components/SingleColumn.astro';
+import LetroFeaturedImage from '../assets/letro-featured.png';
+import NaturalHighOldSite01 from '../assets/nh-old-site-01.jpeg';
+import NaturalHighOldSite02 from '../assets/nh-old-site-02.jpeg';
+import NaturalHighNewSite01 from '../assets/nh-new-site-01.jpeg';
+import NaturalHighNewSite02 from '../assets/nh-new-site-02.jpeg';
+import NaturalHighHomepage from '../assets/nh-homepage.webp';
+---
+
+<Layout title="Letro Android App" description="Android app for end-to-end encrypted messaging that works without internet">
+	<TopNav />
+	<HeroProject 
+		title="Natural High Safaris" 
+		subtitle="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement through improved UX/UI."
+		imageSrc={LetroFeaturedImage}
+		imageAlt="Natural High Safaris Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, Illustrator, Photoshop, Asana ' 
+	timeline='February - April 2021' 
+	role={[
+		'UX/UI Designer', 
+	]}
+    team='1 UX Designer, 1 Product Manager, 2 Developers, 1 Content Writer'
+	overview={[
+		'Natural High Safaris is a travel company that creates tailor-made safaris and once-in-a-lifetime trips around the globe.',
+        'We faced exciting design, UX and UI challenges with the site, owing mainly to the many goal destinations on the site and the large and varied user personas we expect to be interacting with the website.',
+        'The result is a comprehensive website that conveys expertise by bridging the gap between an inspirational informative website and a lead generation tool.'
+	]}
+	liveUrl='https://www.naturalhighsafaris.com/'
+	buttonText='Visit website'
+	/>
+
+	<TwoColumn
+		title="Old website"
+		description={[
+			"The previous website was overly text-heavy and suffered from a dated visual design that no longer reflected the brand’s premium positioning. The top navigation was cluttered, making it difficult for users to find key information quickly.",
+            "Overall, the user experience lacked clarity and modern usability standards, with inefficient user flows that hindered engagement and conversion."
+		]}
+		variant="2x1"
+		leftImage={NaturalHighOldSite01}
+		rightImage={NaturalHighOldSite02}
+		leftAlt="Letro app interface"
+		rightAlt="Letro app interface"
+	/>
+    <SingleColumn topPadding={true}
+        title="New website"
+        description={[
+            "The redesigned website delivers a refined, visually immersive experience that reflects the brand’s ethos of understated luxury and authentic adventure. The homepage now showcases stunning, high-resolution imagery and concise storytelling that immediately engages users and evokes a sense of place.",
+            "A simplified navigation structure and clear content hierarchy guide users seamlessly through curated travel experiences, while the overall aesthetic—marked by elegant typography, spacious layouts, and a natural color palette—reinforces trust and sophistication.",
+            "These improvements not only modernised the brand’s digital presence but also contributed to measurable increases in user engagement and time spent on site."
+        ]}
+        imageSrc={[NaturalHighHomepage]}
+        imageAlt={["Natural High Safaris Homepage"]}
+    />
+    <TwoColumn 
+		description={[
+            "A simplified navigation structure and clear content hierarchy guide users seamlessly through curated travel experiences, while the overall aesthetic—marked by elegant typography, spacious layouts, and a natural color palette—reinforces trust and sophistication.",
+            "These improvements not only modernised the brand’s digital presence but also contributed to measurable increases in user engagement and time spent on site."
+		]}
+		variant="2x1"
+		leftImage={NaturalHighNewSite01}
+		rightImage={NaturalHighNewSite02}
+		leftAlt="Letro app interface"
+		rightAlt="Letro app interface"
+        noPadding={true}
+	/>
+	<Footer />
+</Layout>
