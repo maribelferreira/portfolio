@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 
 ---
-<section class={`pb-8 md:pb-14 ${topPadding ? 'pt-8 md:pt-14' : ''}`}>
+<section class={`pb-8 md:pb-14 bg-blue-600 ${topPadding ? '' : ''}`}>
     <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left">
         {title && <h2 class="text-xl md:text-4xl font-semibold mb-4">{title}</h2>}
         {description && (
