@@ -4,9 +4,6 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import TwoColumn from '../components/TwoColumn.astro';
-import SingleColumn from '../components/SingleColumn.astro';
-import LetroFeaturedImage from '../assets/letro-featured.png';
 import NaturalHighOldSite01 from '../assets/nh-old-site-01.jpeg';
 import NaturalHighOldSite02 from '../assets/nh-old-site-02.jpeg';
 import NaturalHighNewSite01 from '../assets/nh-new-site-01.jpeg';
@@ -43,24 +40,24 @@ import { Image } from 'astro:assets';
 	buttonText='Visit live website'
 	/>
 
-    <section class="border-t border-neutral-700 py-16">
+    <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
             <div class="space-y-4">
-                <h2 class="text-xl md:text-3xl font-semibold">Old website</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold">Old website</h2>
                 <p>The previous website was overly text-heavy and suffered from a dated visual design that no longer reflected the brand’s premium positioning. The top navigation was cluttered, making it difficult for users to find key information quickly.</p>
             <p>Overall, the user experience lacked clarity and modern usability standards, with inefficient user flows that hindered engagement and conversion.
             </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
                 <Image src={NaturalHighOldSite01} alt="Natural High Safaris Old Site 01" />
                 <Image src={NaturalHighOldSite02} alt="Natural High Safaris Old Site 02" />
             </div>
             <div class="space-y-4">
-                <h2 class="text-xl md:text-3xl font-semibold">New website</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold">New website</h2>
                 <p>The redesigned website delivers a modern, visually immersive experience that reflects the brand’s ethos of understated luxury and authentic adventure. The homepage now showcases stunning, high-resolution imagery and concise storytelling that immediately engages users and evokes a sense of place.
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
                 <Image src={NaturalHighNewSite01} alt="Natural High Safaris New Site 01" />
                 <Image src={NaturalHighNewSite02} alt="Natural High Safaris New Site 02" />
             </div>
@@ -69,7 +66,7 @@ import { Image } from 'astro:assets';
                 <Image src={NaturalHighHomepage} alt="Natural High Safaris Homepage" />
             </div>
             <p>These improvements not only modernised the brand’s digital presence but also contributed to a <span class="font-bold text-white">33% increase in user engagement</span>.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
                 <Image src={NaturalHighTeam} alt="Natural High Safaris Team" />
                 <Image src={NaturalHighMobile} alt="Natural High Safaris Mobile" />
             </div>
