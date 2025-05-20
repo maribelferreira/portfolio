@@ -39,14 +39,14 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
 
   <div class="space-y-8">
     <div>
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Role</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-2">Role</h2>
       {Array.isArray(role) ? (
-        role.map(r => <p class="mb-4">{r}</p>)
+        role.map(r => <p class="mb-2">{r}</p>)
       ) : (
-        <p >{role}</p>
+        <p class="mb-2">{role}</p>
       )}
       {responsibilities && responsibilities.length > 0 && (
-        <ul class="list-disc ml-6 space-y-4">
+        <ul class="list-disc ml-6 space-y-2 md:space-y-4">
           {responsibilities.map(item => (
             <li>{item}</li>
           ))}
@@ -55,12 +55,12 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
     </div>
 
     <div>
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Tools</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-2">Tools</h2>
       <p>{tools}</p>
     </div>
 
     <div>
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Timeline</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-2">Timeline</h2>
       <p>{timeline}</p>
     </div>
   </div>
