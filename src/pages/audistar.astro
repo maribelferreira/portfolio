@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import Auditstar01 from '../assets/auditstar-01.webp';
+import Auditstar02 from '../assets/auditstar-02.webp';
+import Auditstar03 from '../assets/auditstar-03.webp';
+import Auditstar04 from '../assets/auditstar-04.webp';
+import Auditstar05 from '../assets/auditstar-05.webp';
+import Auditstar08 from '../assets/auditstar-08.webp';
+import { Image } from 'astro:assets';
+---
+
+<Layout title="Letro Android App" description="Android app for end-to-end encrypted messaging that works without internet">
+	<TopNav />
+	<HeroProject 
+		title="Audistar" 
+		subtitle="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement."
+		imageSrc={Auditstar01}
+		imageAlt="Audistar Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, Illustrator, Photoshop, Asana ' 
+	timeline='February - April 2021' 
+	role={[
+		'UX/UI Designer', 
+	]}
+    team='1 UX Designer, 1 Product Manager, 2 Developers, 1 Content Writer'
+	overview={[
+		'Natural High Safaris is a travel company that creates tailor-made safaris and once-in-a-lifetime trips around the globe.',
+        'We faced exciting design, UX and UI challenges with the site, owing mainly to the many goal destinations on the site and the large and varied user personas we expect to be interacting with the website.',
+        'The result is a comprehensive website that conveys expertise by bridging the gap between an inspirational informative website and a lead generation tool.'
+	]}
+	liveUrl='https://www.naturalhighsafaris.com/'
+	buttonText='Visit live website'
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">Old website</h2>
+                <p>The previous website was overly text-heavy and suffered from a dated visual design that no longer reflected the brand’s premium positioning. The top navigation was cluttered, making it difficult for users to find key information quickly.</p>
+            <p>Overall, the user experience lacked clarity and modern usability standards, with inefficient user flows that hindered engagement and conversion.
+            </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={Auditstar01} alt="Audistar Old Site 01" />
+                <Image src={Auditstar02} alt="Audistar Old Site 02" />
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">New website</h2>
+                <p>The redesigned website delivers a modern, visually immersive experience that reflects the brand’s ethos of understated luxury and authentic adventure. The homepage now showcases stunning, high-resolution imagery and concise storytelling that immediately engages users and evokes a sense of place.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={Auditstar04} alt="Audistar New Site 01" />
+                <Image src={Auditstar05} alt="Audistar New Site 02" />
+            </div>
+            <p>A simplified navigation structure and clear content hierarchy guide users seamlessly through curated travel experiences, while the overall aesthetic—marked by elegant typography, spacious layouts, and a natural color palette—reinforces trust and sophistication.</p>
+            <div>
+                <Image src={Auditstar05} alt="Audistar Homepage" />
+            </div>
+            <p>These improvements not only modernised the brand’s digital presence but also contributed to a <span class="font-bold text-white">33% increase in user engagement</span>.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={Auditstar03} alt="Audistar Team" />
+                <Image src={Auditstar08} alt="Audistar Mobile" />
+            </div>
+            <div>
+                <Image src={Auditstar08} alt="Audistar Laptop" />
+            </div>
+        </div>
+    </section>
+	<Footer />
+</Layout>
