@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import FeaturedAwala from '../assets/featured-awala.png';
+import VeraidHomepage from '../assets/veraid-homepage.png';
+import OldVeraid from '../assets/old-veraid.png';
+import TechVeraid from '../assets/tech-veraid.png';
+import Kliento from '../assets/kliento.png';
+import FeaturedVeraid from '../assets/featured-veraid.png';
+import { Image } from 'astro:assets';
+
+---
+
+<Layout title="VeraId Website Redesign" description="Designed and built a responsive marketing site for VeraId, an offline authentication protocol, significantly increasing traffic by 60% in 2 months.">
+	<TopNav />
+	<HeroProject 
+		title="VeraId Website Redesign" 
+		subtitle="Designed and built a responsive marketing site for VeraId, an offline authentication protocol, significantly increasing traffic by 60% in 2 months."
+		imageSrc={FeaturedVeraid}
+		imageAlt="Veraid Website Redesign Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, FigmaJam, Cursor, Astro, React, TailwindCSS, Google Analytics, Google Search Console, Jira.' 
+	timeline='May - April 2025' 
+	role={[
+		'I led the website UX/UI redesign, created all custom illustrations, and implemented the site. I also handled SEO optimisation, multi-language architecture, and ensured full responsive design.', 
+	]}
+	overview={[
+		'VeraId is a decentralized, offline-first authentication protocol, but its previous marketing website failed to reflect the product’s sophistication or clearly communicate its purpose.',
+        'The design was visually outdated, text-heavy, and lacked visual hierarchy, resulting in high bounce rates, low engagement, and poor readability. Most critically, the value proposition wasn’t immediately clear to its target audience of developers and technical users.',
+       
+	]}
+	liveUrl='https://veraid.net/'
+	buttonText='Visit live website'
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">Old website</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={OldVeraid} alt="Old Veraid" />
+            </div>
+            </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+
+                    <h2 class="text-2xl md:text-3xl font-semibold">Challenge</h2>
+                    
+
+                <div>
+                    <p>The primary goal of the redesign was to transform VeraId’s website into a compelling, developer-focused experience that clearly communicates what the product does within seconds. The new site needed to simplify the explanation of a complex authentication protocol, reduce bounce rates, and build trust with a technical audience through intuitive design and modern visual language.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-3xl font-semibold pb-4">Design solutions</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Clear visual hierarchy & focused messaging</h3>
+                            <p class="mt-2">Simplified content structure with bold headlines and concise copy that immediately communicate VeraId's purpose and benefits.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Interactive carousel in hero section</h3>
+                            <p class="mt-2">To make the protocol's capabilities instantly understandable, I added a horizontal carousel animation that cycles through real-world verification examples in a playful, developer-friendly tone.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Dark theme for a modern developer feel</h3>
+                            <p class="mt-2">Dark mode isn’t just aesthetic, it’s what developers expect. It reduces eye strain and instantly aligns VeraId with the tools devs use daily (IDEs, terminals, GitHub).
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Improved information architecture</h3>
+                            <p class="mt-2">Reorganized content into intuitive, scroll-friendly sections that guide users through the use cases, product's features, how it works, and call to action.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Enhanced credibility and social proof</h3>
+                            <p class="mt-2">Added a personal founder message, highlighted reputable funders to build trust.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Engaging “How it works” demo</h3>
+                            <p class="mt-2">Explaining VeraId’s protocol visually was a challenge, I solved it by creating a React-based interactive demo video. This turned a hard-to-explain concept into an approachable narrative.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Multi-level top navigation</h3>
+                            <p class="mt-2">Introduced a structured nav system to highlight VeraId’s broader ecosystem, including the Kliento product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <Image src={VeraidHomepage} alt="Veraid Homepage" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">Implementation</h2>
+                <p>I built the final site using Astro, Tailwind CSS, and React. Integrated OG tags, JSON schema, and optimised the website for SEO by conducting key research, optimising titles and meta descriptions with relevant keywords, using descriptive and keyword-rich URLs, and optimising images. </p>
+                
+            </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto">
+                <Image src={TechVeraid} alt="Tech Veraid" />
+                <Image src={Kliento} alt="Kliento" />
+            </div>
+            </div>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+                <div class="space-y-4 mt-8 md:mt-12">
+                    <h2 class="text-2xl md:text-3xl font-semibold">Project outcome</h2>
+                        <p>Since launch, the redesigned VeraId website has delivered measurable results. Within two months, site traffic increased by 60%. </p>
+                </div>
+                </div>
+        </section>
+	<Footer />
+</Layout>
