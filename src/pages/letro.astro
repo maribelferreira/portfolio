@@ -4,68 +4,93 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import SingleColumn from '../components/SingleColumn.astro';
-import TwoColumn from '../components/TwoColumn.astro';
-import FeatherImage from '../assets/feather.png';
-import LetroImage from '../assets/letro.png';
-import GoogleListingImage from '../assets/google-listings.png';
-import OnboardingImage from '../assets/onboarding.png';
-import LetroFeaturedImage from '../assets/letro-featured.png';
+import NaturalHighOldSite01 from '../assets/nh-old-site-01.jpeg';
+import NaturalHighOldSite02 from '../assets/nh-old-site-02.jpeg';
+import NaturalHighNewSite01 from '../assets/nh-new-site-01.jpeg';
+import NaturalHighNewSite02 from '../assets/nh-new-site-02.jpeg';
+import NaturalHighHomepage from '../assets/nh-homepage.webp';
+import NaturalHighLaptop from '../assets/nh-laptop-04.webp';
+import NaturalHighTeam from '../assets/nh-team.jpeg';
+import NaturalHighMobile from '../assets/nh-mobile.jpeg';
+import NHTopSafaris from '../assets/nh-top-safaris.png';
+import MushoImage from '../assets/musho.png';
+
+import { Image } from 'astro:assets';
 ---
 
-<Layout title="Letro Android App" description="Android app for end-to-end encrypted messaging that works without internet">
+<Layout title="Natural High Safaris" description="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement.">
 	<TopNav />
 	<HeroProject 
-		title="Letro Android App" 
-		subtitle="Designed an Android app that is like email, but end-to-end encrypted and works without the Internet."
-		imageSrc={LetroFeaturedImage}
-		imageAlt="Letro Android App Hero Image"
+		title="Natural High Safaris" 
+		subtitle="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement."
+		imageSrc={NHTopSafaris}
+		imageAlt="Natural High Safaris Hero Image"
 	/>
 	<ProjectDetails 
-	tools='Figma, FigmaJam, Maze, Illustrator, After Effects, Lottie.' 
-	timeline='2023 - 2024' 
+	tools='Figma, Illustrator, Photoshop, Asana ' 
+	timeline='February - April 2021' 
 	role={[
-		'As the sole Product Designer, I led the entire UX/UI and branding design process, including:',
+		'UX/UI Designer', 
 	]}
-	responsibilities={[
-	'MVP scoping with the developer and CEO.', 
-	'Conducting user research, usability testing, and competitor analysis.', 
-	'Designing information architecture, wireframes, prototypes, and the visual language.', 
-	'Creating a scalable design system.', 
-	'Custom illustrations and animations.',
-	'Documenting designs, supporting development, and iterating throughout the process.', 
-	]}
+    team='1 UX Designer, 1 Product Manager, 2 Developers, 1 Content Writer'
 	overview={[
-		"Letro is a US government-funded offline-compatible messaging app designed as an alternative to traditional email. Built for people in regions with heavy internet censorship and frequent shutdowns, Letro reimagines asynchronous communication for constrained environments, all without a constant internet connection..",
+		'Natural High Safaris is a travel company that creates tailor-made safaris and once-in-a-lifetime trips around the globe.',
+        'We faced exciting design, UX and UI challenges with the site, owing mainly to the many goal destinations on the site and the large and varied user personas we expect to be interacting with the website.',
+        'The result is a comprehensive website that conveys expertise by bridging the gap between an inspirational informative website and a lead generation tool.'
 	]}
-	liveUrl='https://letro.app/en/'
-	buttonText='See Letro app'
+	liveUrl='https://www.naturalhighsafaris.com/'
+	buttonText='Visit live website'
 	/>
-	<SingleColumn 
-		title="Challenge" 
-		description={[
-			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
-			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
-		]}
-		imageSrc={[OnboardingImage, GoogleListingImage]}
-		imageAlt={["Letro app interface", "Letro app interface"]}
-	/>
-	<SingleColumn 
-	title="Challenge" 
-		description={[
-			"Feather aims to make birding and bird information <strong>easily accessible</strong> to those who wish to enjoy the great outdoors, by providing users with a database to discover bird locations, plan outings, identify species, and contribute to the local birding community.",
-			"The app integrates with <a href='https://ebird.org' class='text-blue-400 hover:underline'>eBird</a> and allows users to <em>track their sightings</em> and share them with the community."
-		]}
-	imageSrc={[FeatherImage, FeatherImage]}
-	imageAlt={["Letro app interface", "Letro app interface"]}
-	topPadding={false}
-	/>
-	<TwoColumn 
-		variant="2x1"
-		leftImage={LetroImage}
-		rightImage={LetroImage}
-		leftAlt="Letro app interface"
-		rightAlt="Letro app interface"
-	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">Overview</h2>
+                <p>Letro is a government-funded offline-compatible messaging app designed as an alternative to traditional email. Built for people in regions with heavy internet censorship and frequent shutdowns, Letro reimagines asynchronous communication for constrained environments — all without a constant internet connection.</p>
+            <p>Overall, the user experience lacked clarity and modern usability standards, with inefficient user flows that hindered engagement and conversion.
+            </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={NaturalHighOldSite01} alt="Natural High Safaris Old Site 01" />
+                <Image src={NaturalHighOldSite02} alt="Natural High Safaris Old Site 02" />
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">New website</h2>
+                <p>The redesigned website delivers a modern, visually immersive experience that reflects the brand's ethos of understated luxury and authentic adventure. The homepage now showcases stunning, high-resolution imagery and concise storytelling that immediately engages users and evokes a sense of place.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={NaturalHighNewSite01} alt="Natural High Safaris New Site 01" />
+                <Image src={NaturalHighNewSite02} alt="Natural High Safaris New Site 02" />
+            </div>
+            <p>A simplified navigation structure and clear content hierarchy guide users seamlessly through curated travel experiences, while the overall aesthetic—marked by elegant typography, spacious layouts, and a natural color palette—reinforces trust and sophistication.</p>
+            <div>
+                <Image src={NaturalHighHomepage} alt="Natural High Safaris Homepage" />
+            </div>
+            <p>These improvements not only modernised the brand's digital presence but also contributed to a <span class="font-bold text-white">33% increase in user engagement</span>.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={NaturalHighTeam} alt="Natural High Safaris Team" />
+                <Image src={NaturalHighMobile} alt="Natural High Safaris Mobile" />
+            </div>
+            <div>
+                <Image src={NaturalHighLaptop} alt="Natural High Safaris Laptop" />
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-[2fr_3fr] gap-8">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-3xl font-semibold">Column Heading</h2>
+                    <p>This is a paragraph in the left column. The width of this column is smaller than the right column which contains an image. This layout demonstrates how to create an asymmetrical two-column design.</p>
+                </div>
+                <div>
+                    <Image src={MushoImage} alt="Musho image" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+	
 	<Footer />
 </Layout>

@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import MushoImage from '../assets/musho.png';
+import Implementation01 from '../assets/implementation-01.png';
+import Implementation02 from '../assets/implementation-02.png';
+import FeaturedAwala from '../assets/featured-awala.png';
+import OldAwala from '../assets/old-awala.png';
+import AwalaHomepage from '../assets/awala-homepage.png';
+import AwalaWireframe from '../assets/awala-wireframe.png';
+import { Image } from 'astro:assets';
+
+---
+
+<Layout title="Natural High Safaris" description="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement.">
+	<TopNav />
+	<HeroProject 
+		title="Awala Website Redesign" 
+		subtitle="Designed and built a responsive multi-language marketing site for Awala, a platform to build offline-compatible apps, significantly increasing traffic by 4x and user engagement by 20% in 6 months."
+		imageSrc={FeaturedAwala}
+		imageAlt="Awala Website Redesign Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, FigmaJam, Illustrator, Cursor, Astro, TailwindCSS, Google Analytics, Google Search Console, Ahrefs.' 
+	timeline='February - April 2021' 
+	role={[
+		'I led the website UX/UI redesign, created all custom illustrations, and implemented the site. I also handled SEO optimisation, multi-language architecture, and ensured full responsive design.', 
+	]}
+	overview={[
+		'Awala is an all-in-one app to bypass Internet censorship caused by governments, foreign militaries, and civil wars. It includes a secure built Awala VPN, which is specifically designed to climb over the Great Firewall of China and access the free Internet.',
+       
+	]}
+	liveUrl='https://awala.app/en/'
+	buttonText='Visit live website'
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold">Problem statement</h2>
+                <p>The existing Awala website struggled to effectively communicate the value proposition and functionality of the product. Its design was text-heavy, visually outdated, and lacked a clear hierarchy.</p>
+                <p>Key features were buried in dense paragraphs, while weak visuals and a lack of human connection made the platform feel impersonal and untrustworthy. Overall, the site did not reflect the importance or credibility of Awala’s work in circumventing internet censorship.</p> 
+            </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
+                <Image src={OldAwala} alt="Old Awala" />
+                <p class="text-sm text-center text-neutral-400 -mt-2">Old website</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+
+                    <h2 class="text-2xl md:text-3xl font-semibold">Challenge</h2>
+                    
+
+                <div>
+                    <p>The challenge was to transform the Awala website into a modern, intuitive, and visually compelling platform that effectively communicates its mission to their target audience, while also maintaining a friendly, accessible tone despite the seriousness of the subject matter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-3xl font-semibold">The design process</h2>
+                    <ul class="space-y-4">
+                        <li><strong>Competitive analysis:</strong> Analyzed leading censorship circumvention tools and VPNs.</li>
+                        <li><strong>User Research: </strong> Conducted interviews with users to understand their needs and pain points.</li>
+                        <li><strong>Site Architecture:</strong> Worked closely with the tech lead to design a scalable multi-language infrastructure.</li>
+                        <li><strong>Wireframing & Prototyping:</strong> Iterated quickly, tested designs, and incorporated feedback.
+                        </li>
+                    
+
+                    </ul>
+                </div>
+                <div>
+                    <Image src={AwalaWireframe} alt="Awala Wireframe" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-3xl font-semibold pb-4">Design solutions</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Clear visual hierarchy & focused messaging</h3>
+                            <p class="mt-2">Simplified content structure with bold headlines and concise copy that immediately communicate Awala's purpose and benefits.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Modern visual design and branding</h3>
+                            <p class="mt-2">Crafted a bold visual identity using custom illustrations to balance the serious mission with a welcoming tone. I used bold headlines, generous whitespace, icons and a consistent color palette of deep blues and vibrant yellows to create visual contrast and clarity.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Improved information architecture</h3>
+                            <p class="mt-2">Reorganized content into intuitive, scroll-friendly sections that guide users through the product's features, benefits, and calls to action.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Enhanced credibility and social proof</h3>
+                            <p class="mt-2">Added a personal founder message, highlighted reputable funders, and emphasized the open-source nature of the project to build trust.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Emphasis on privacy and security</h3>
+                            <p class="mt-2">Clearly displayed key features like decentralized infrastructure, no special hardware, and open-source code in a scannable, icon-supported format.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Stronger conversion paths</h3>
+                            <p class="mt-2">Strategically placed, high-contrast call-to-action buttons throughout the site encourage downloads and newsletter signups.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Global, inclusive design tone</h3>
+                            <p class="mt-2">Adopted empathetic language and inclusive visuals to resonate with a diverse, global audience affected by censorship and conflict.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <Image src={AwalaHomepage} alt="Awala Homepage" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+
+                    <h2 class="text-2xl md:text-3xl font-semibold">Project outcome</h2>
+                    
+
+                <div>
+                    <p>Since launch, the redesigned Awala website has delivered measurable results. Within six months, site traffic increased by 4X, and user engagement rose by 20%, reflecting improved clarity, trust, and usability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<Footer />
+</Layout>
