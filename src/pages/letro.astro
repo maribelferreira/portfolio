@@ -4,90 +4,152 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import NaturalHighOldSite01 from '../assets/nh-old-site-01.jpeg';
 import NaturalHighOldSite02 from '../assets/nh-old-site-02.jpeg';
-import NaturalHighNewSite01 from '../assets/nh-new-site-01.jpeg';
-import NaturalHighNewSite02 from '../assets/nh-new-site-02.jpeg';
-import NaturalHighHomepage from '../assets/nh-homepage.webp';
-import NaturalHighLaptop from '../assets/nh-laptop-04.webp';
-import NaturalHighTeam from '../assets/nh-team.jpeg';
-import NaturalHighMobile from '../assets/nh-mobile.jpeg';
-import NHTopSafaris from '../assets/nh-top-safaris.png';
-import MushoImage from '../assets/musho.png';
+import GoogleListings from '../assets/google-listings.png';
+import LetroFeatured from '../assets/letro-featured.png';
+import DarkTheme from '../assets/dark-theme.png';
+import SendButton from '../assets/send-button.png';
+import Onboarding from '../assets/onboarding.png';
+import LetroIllustrations from '../assets/letro-illustrations.png';
+
 
 import { Image } from 'astro:assets';
 ---
 
-<Layout title="Natural High Safaris" description="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement.">
+<Layout title="Letro app" description="Led the end-to-end UI/UX design and the brand identity of Letro, an offline-compatible alternative to email.">
 	<TopNav />
 	<HeroProject 
-		title="Natural High Safaris" 
-		subtitle="Redesigned a bespoke website for a luxury safari and wilderness travel brand, leading to a 33% increase in user engagement."
-		imageSrc={NHTopSafaris}
-		imageAlt="Natural High Safaris Hero Image"
+		title="Letro app" 
+		subtitle="Led the end-to-end UI/UX design and the brand identity of Letro, an offline-compatible alternative to email."
+		imageSrc={LetroFeatured}
+		imageAlt="Letro Hero Image"
 	/>
 	<ProjectDetails 
-	tools='Figma, Illustrator, Photoshop, Asana ' 
-	timeline='February - April 2021' 
-	role={[
-		'UX/UI Designer', 
+	tools='Figma, FigmaJam, Maze, Illustrator, AE, Jira. ' 
+	timeline='January - April 2024' 
+	role='I led the UX/UI and brand design for Letro, including:'
+	responsibilities={[
+        'User research and usability testing.',
+        'Information architecture and user flows.',
+        'Wireframes, hi-fi prototypes, and design system.',
+        'Custom illustrations, icons, and animations.',
+        'Dev-ready documentation.'
 	]}
-    team='1 UX Designer, 1 Product Manager, 2 Developers, 1 Content Writer'
+    team='1 UX Designer, 1 Product Manager, 2 Developers'
 	overview={[
-		'Natural High Safaris is a travel company that creates tailor-made safaris and once-in-a-lifetime trips around the globe.',
-        'We faced exciting design, UX and UI challenges with the site, owing mainly to the many goal destinations on the site and the large and varied user personas we expect to be interacting with the website.',
-        'The result is a comprehensive website that conveys expertise by bridging the gap between an inspirational informative website and a lead generation tool.'
+		'Letro is a US government-funded, offline-compatible messaging app designed to serve people in regions facing heavy internet censorship and routine shutdowns. Built using Awala, Letro works with and without internet, offering a secure, modern alternative to traditional email. It supports end-to-end encryption and it is spam resistant.',
+        
 	]}
-	liveUrl='https://www.naturalhighsafaris.com/'
-	buttonText='Visit live website'
+	liveUrl='https://letro.app/en/'
+	buttonText='Watch a demo of Letro'
 	/>
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
-            <div class="space-y-4">
-                <h2 class="text-2xl md:text-3xl font-semibold">Overview</h2>
-                <p>Letro is a government-funded offline-compatible messaging app designed as an alternative to traditional email. Built for people in regions with heavy internet censorship and frequent shutdowns, Letro reimagines asynchronous communication for constrained environments — all without a constant internet connection.</p>
-            <p>Overall, the user experience lacked clarity and modern usability standards, with inefficient user flows that hindered engagement and conversion.
-            </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
-                <Image src={NaturalHighOldSite01} alt="Natural High Safaris Old Site 01" />
-                <Image src={NaturalHighOldSite02} alt="Natural High Safaris Old Site 02" />
-            </div>
-            <div class="space-y-4">
-                <h2 class="text-2xl md:text-3xl font-semibold">New website</h2>
-                <p>The redesigned website delivers a modern, visually immersive experience that reflects the brand's ethos of understated luxury and authentic adventure. The homepage now showcases stunning, high-resolution imagery and concise storytelling that immediately engages users and evokes a sense of place.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
-                <Image src={NaturalHighNewSite01} alt="Natural High Safaris New Site 01" />
-                <Image src={NaturalHighNewSite02} alt="Natural High Safaris New Site 02" />
-            </div>
-            <p>A simplified navigation structure and clear content hierarchy guide users seamlessly through curated travel experiences, while the overall aesthetic—marked by elegant typography, spacious layouts, and a natural color palette—reinforces trust and sophistication.</p>
-            <div>
-                <Image src={NaturalHighHomepage} alt="Natural High Safaris Homepage" />
-            </div>
-            <p>These improvements not only modernised the brand's digital presence but also contributed to a <span class="font-bold text-white">33% increase in user engagement</span>.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4">
-                <Image src={NaturalHighTeam} alt="Natural High Safaris Team" />
-                <Image src={NaturalHighMobile} alt="Natural High Safaris Mobile" />
-            </div>
-            <div>
-                <Image src={NaturalHighLaptop} alt="Natural High Safaris Laptop" />
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+
+                    <h2 class="text-2xl md:text-3xl font-semibold">Problem statement</h2>
+                    
+
+                <div>
+                    <p>In many regions, traditional messaging tools like Gmail or WhatsApp are rendered useless due to frequent blackouts, surveillance, and censorship. Letro aimed to fill that gap: a secure, offline-compatible alternative that works reliably in such constrained environments.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-[2fr_3fr] gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-3xl font-semibold">Challenge</h2>
+                <div>
+                  <p>The challenge was to design a messaging experience that not only works intuitively without the internet for users in regions with heavy Internet restrictions, but also feels secure, trustworthy, and a delight to use.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
-                    <h2 class="text-2xl md:text-3xl font-semibold">Column Heading</h2>
-                    <p>This is a paragraph in the left column. The width of this column is smaller than the right column which contains an image. This layout demonstrates how to create an asymmetrical two-column design.</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold">Designing from first principles</h2>
+                    <p class="pb-6">Building Letro meant designing a communication experience from the ground up, without assuming users had fast internet or up-to-date hardware. The biggest UX challenges included:  </p>
+                    <h3 class="text-[1.4rem] font-semibold">Offline-First Design</h3>
+                    <p>Every interaction had to work seamlessly in both offline and online modes. We couldn’t rely on real-time feedback, server validation, or typical "loading" states. Designing for asynchronous sync required clear UI states and user feedback, especially for message delivery and drafts.
+                    </p>
                 </div>
                 <div>
-                    <Image src={MushoImage} alt="Musho image" class="w-full h-auto" />
+                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div>
+                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[1.4rem] font-semibold">Device constraints</h3>
+                    <p>Letro needed to run reliably on older Android phones. This meant lightweight screens, minimal animations, and optimised assets, without compromising clarity or usability.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-[1.4rem] font-semibold">Clarity over convention</h3>
+                    <p>During the user testing, we found that users are very familiar with Gmail, but some of them found icon-only actions (like the paper plane for “send”) confusing. 
+                    </p>
+                    <p>Instead, Letro used explicit text labels with supporting icons, such as a clearly labeled “Send” and "Reply"button, to reduce ambiguity and support varying levels of digital literacy.</p>
+                </div>
+                <div>
+                    <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div>
+                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[1.4rem] font-semibold">Accessibility & multilingual UX
+                    </h3>
+                    <p>Letro was localised into multiple languages, so I designed the UI to handle variable-length strings, right-to-left (RTL) support, and font legibility across scripts. I also ensured:
+                        <li>High color contrast for readability in harsh lighting.</li>
+                        <li>Tap targets large enough for all users.</li>
+                        <li>Intuitive navigation without relying on icon-only actions.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-3xl font-semibold">Visual design</h2>
+                <div class="space-y-4">
+                    <p>Letro’s visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts. I created a custom bird mascot to serve as a visual guide throughout the app, adding a layer of warmth and personality to an otherwise serious tool. </p>
+                    <p>To support user comfort and extend accessibility, I also designed a fully-compatible dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimized for low-end Android devices.</p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <Image src={LetroIllustrations} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+            
+            <div class="mt-8">
+                <Image src={DarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+            <div class="mt-8">
+                <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+            <div class="mt-8">
+                <p>To ensure platform-native usability and speed up development, I followed Material Design guidelines throughout the UI, aligning components and interaction patterns with Android standards.</p>
             </div>
         </div>
     </section>
