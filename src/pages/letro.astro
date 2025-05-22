@@ -106,7 +106,7 @@ import { Image } from 'astro:assets';
         </div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
-                <div class="order-last md:order-first">
+                <div>
                     <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4 order-first md:order-last">
@@ -127,13 +127,13 @@ import { Image } from 'astro:assets';
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Designing for offline-first experiences</h3>
                     <p>Every interaction had to work seamlessly in both offline and online modes. We couldn't rely on real-time feedback or server validation. Designing for asynchronous sync required clear UI states and user feedback, especially for message delivery and drafts that:
                     </p>
-                    <ul class="list-disc list-inside space-y-2 ml-4">
+                    <ul class="list-disc list-outside space-y-2 ml-4">
                         <li>Clearly indicate message status (sent/pending/delivered) without requiring connectivity.</li>
                         <li>Provide appropriate feedback during connectivity gaps.</li>
                         <li>Provides a clear call to action for users to try again later.</li>
                     </ul>
                 </div>
-                <div class="order-last md:order-first">
+                <div>
                     <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
@@ -150,7 +150,6 @@ import { Image } from 'astro:assets';
                     </p>
                     <p><strong>The solution:</strong> A streamlined pairing flow that visually resembles "adding contacts" in messaging apps rather than email's addressing system, making an unfamiliar concept immediately understandable.</p>
                 </div>
-
             </div>
         </div>
 
@@ -165,7 +164,7 @@ import { Image } from 'astro:assets';
                     <p>Instead, Letro used explicit text labels with supporting icons, such as a clearly labeled "Send" and "Reply" button, to reduce ambiguity and support varying levels of digital literacy.
                     </p>
                 </div>
-                <div class="order-last md:order-first">
+                <div>
                     <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
@@ -197,13 +196,13 @@ import { Image } from 'astro:assets';
                     </h3>
                     <p>Letro was localised into multiple languages, so I designed the UI to handle variable-length strings, right-to-left (RTL) support, and font legibility across scripts. I also ensured:
                     </p>
-                    <ul class="list-disc list-inside space-y-2 ml-4">
+                    <ul class="list-disc list-outside space-y-2 pl-4">
                         <li>High color contrast for readability in harsh lighting.</li>
                         <li>Tap targets large enough for all users.</li>
                         <li>Intuitive navigation without relying on icon-only actions.</li> 
                     </p>
                 </div>
-                <div class="order-last md:order-first">
+                <div>
                     <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
