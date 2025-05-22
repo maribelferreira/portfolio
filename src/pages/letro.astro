@@ -4,13 +4,16 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import NaturalHighOldSite02 from '../assets/nh-old-site-02.jpeg';
 import GoogleListings from '../assets/google-listings.png';
 import LetroFeatured from '../assets/letro-featured.png';
 import DarkTheme from '../assets/dark-theme.png';
 import SendButton from '../assets/send-button.png';
 import Onboarding from '../assets/onboarding.png';
 import LetroIllustrations from '../assets/letro-illustrations.png';
+import LetroOnboarding from '../assets/letro-onboarding.png';
+import LetroAccount from '../assets/letro-account.png';
+import PairContact from '../assets/pair-contact.png';
+import Accessibility from '../assets/accessibility.png';
 
 
 import { Image } from 'astro:assets';
@@ -100,20 +103,20 @@ import { Image } from 'astro:assets';
                     <p> This approach educates users on the relationship between apps without technical jargon, and reduces installation abandonment through contextual guidance.</p>
                 </div>
                 <div>
-                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
         </div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div>
-                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={LetroAccount} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4 order-first md:order-last">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Rethinking account creation</h3>
                     <p>I designed a simplified onboarding flow that eliminated traditional email/password requirements. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This approach:
                     </p>
-                    <ul class="list-disc list-inside space-y-2">
+                    <ul class="list-disc list-outside space-y-2 pl-4">
                         <li>Creates immediate regional familiarity, making the app feel more personalised.</li>
                         <li>Reduces friction by removing email and password entry.</li>
                         <li>Maintains privacy through anonymised identifiers.</li>
@@ -142,7 +145,7 @@ import { Image } from 'astro:assets';
             
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="order-last md:order-first">
-                    <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={PairContact} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Solving the contact pairing challenge</h3>
@@ -165,7 +168,7 @@ import { Image } from 'astro:assets';
                     </p>
                 </div>
                 <div>
-                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
         </div>
@@ -199,11 +202,12 @@ import { Image } from 'astro:assets';
                     <ul class="list-disc list-outside space-y-2 pl-4">
                         <li>High color contrast for readability in harsh lighting.</li>
                         <li>Tap targets large enough for all users.</li>
+                        <li>Dark theme to reduce eye strain.</li>
                         <li>Intuitive navigation without relying on icon-only actions.</li> 
                     </p>
                 </div>
                 <div>
-                    <Image src={Onboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={Accessibility} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
         </div>
