@@ -10,10 +10,10 @@ interface Props {
   team?: string;
 }
 
-const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText } = Astro.props;
+const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText, team } = Astro.props;
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] max-w-screen-2xl mx-auto px-6 md:px-8 gap-8 md:gap-16 pb-10 md:pb-14">
+<div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] max-w-screen-2xl mx-auto px-6 md:px-8 gap-8 md:gap-16 pb-10 md:pb-14">
   <div>
     <h2 class="text-xl md:text-2xl font-semibold mb-4">Overview</h2>
     {Array.isArray(overview) ? (
@@ -23,8 +23,25 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
     ) : (
       <p class="mb-6">{overview}</p>
     )}
+
+    <div class="mb-8">
+      <h2 class="text-xl md:text-2xl font-semibold mb-2">Role</h2>
+      {Array.isArray(role) ? (
+        role.map(r => <p class="mb-2">{r}</p>)
+      ) : (
+        <p class="mb-2">{role}</p>
+      )}
+      {responsibilities && responsibilities.length > 0 && (
+        <ul class="list-disc ml-6 space-y-2 md:space-y-3">
+          {responsibilities.map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+
     {liveUrl && (
-      <a href={liveUrl} class="relative inline-block group text-md font-medium mt-2 md:mt-4 px-8 py-3 rounded-full transition-all duration-300" target="_blank">
+      <a href={liveUrl} class="relative inline-block group text-md font-medium px-8 py-3 rounded-full transition-all duration-300" target="_blank">
         <span class="absolute inset-0 rounded-full bg-gradient-to-r from-[#1cff6f] via-[#6d3bf6] to-[#00ff5e] animate-gradient bg-[length:200%_100%]"></span>
         <span class="absolute inset-[2px] rounded-full bg-[#18151F] transition-all duration-300"></span>
         <span class="relative flex items-center gap-4 text-white">
@@ -39,22 +56,6 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
 
   <div class="space-y-8">
     <div>
-      <h2 class="text-xl md:text-2xl font-semibold mb-2">Role</h2>
-      {Array.isArray(role) ? (
-        role.map(r => <p class="mb-2">{r}</p>)
-      ) : (
-        <p class="mb-2">{role}</p>
-      )}
-      {responsibilities && responsibilities.length > 0 && (
-        <ul class="list-disc ml-6 space-y-2 md:space-y-4">
-          {responsibilities.map(item => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-
-    <div>
       <h2 class="text-xl md:text-2xl font-semibold mb-2">Tools</h2>
       <p>{tools}</p>
     </div>
@@ -63,5 +64,12 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText }
       <h2 class="text-xl md:text-2xl font-semibold mb-2">Timeline</h2>
       <p>{timeline}</p>
     </div>
+
+    {team && (
+      <div>
+        <h2 class="text-xl md:text-2xl font-semibold mb-2">Team</h2>
+        <p>{team}</p>
+      </div>
+    )}
   </div>
 </div>
