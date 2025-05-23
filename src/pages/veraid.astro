@@ -34,9 +34,9 @@ import { Image } from 'astro:assets';
 
 <section class="border-t border-neutral-700 py-8 md:py-16">
     <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
             <div class="space-y-4">
-                <h2 class="text-2xl md:text-[2.5rem] font-semibold">Problem statement</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Problem statement</h2>
                 <p>As the previous VeraId website was purely for informational purposes, it didn't fully reflect the product's technical sophistication. Visually, it relied on dense text and lacked clear visual hierarchy, making it harder for visitors to quickly understand VeraId's value.</p>
                 <p>Additionally, limited content, minimal promotion, and low SEO visibility contributed to low engagement and traffic.</p>
             </div>
@@ -45,12 +45,11 @@ import { Image } from 'astro:assets';
     </div>
 </section>
 
-    <section class="border-t border-neutral-700 py-8 md:py-16">
+<section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
 
-                    <h2 class="text-2xl md:text-[2.5rem] font-semibold">Goals & objectives</h2>
-                    
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Goals & objectives</h2>
 
                 <div>
                     <p>The main goal of the redesign was to transform VeraId's website into an engaging, modern marketing site. Key objectives included clearly communicating the product's value proposition, simplifying complex technical concepts, and establishing credibility with a developer audience.
@@ -66,7 +65,7 @@ import { Image } from 'astro:assets';
 			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Key design solutions</h2>
 		</div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-2xl md:text-3xl font-semibold">Making the protocol instantly understandable</h3>
                     <p>To help users quickly grasp VeraId's capabilities, we highlighted real-world verification examples, an idea contributed by the tech lead.</p>
@@ -78,7 +77,7 @@ import { Image } from 'astro:assets';
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="order-last md:order-first">
                     <Image src={VeraidHero} alt="Veraid Hero" class="w-full h-auto" />
                 </div>
@@ -91,7 +90,7 @@ import { Image } from 'astro:assets';
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-2xl md:text-3xl font-semibold">Multi-Level top navigation for service expansion</h3>
                     <p>To accommodate VeraId's service <i>Kliento</i>, and any other services in the future, I added a multi-level top navigation structure.</p>
@@ -102,7 +101,7 @@ import { Image } from 'astro:assets';
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="order-last md:order-first">
                     <Image src={VeraidHero} alt="Veraid Hero" class="w-full h-auto" />
                 </div>
@@ -117,11 +116,11 @@ import { Image } from 'astro:assets';
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
 
                     <h2 class="text-2xl md:text-[2.5rem] font-semibold">Site implementation</h2>
                 <div class="space-y-4">
-                    <p>I built the fully responsive site using Astro, Tailwind CSS, and React, in close collaboration with the tech lead, who reviewed the code and provided technical guidance throughout the process.</p>
+                <p>I built the fully responsive site using Astro, Tailwind CSS, and React, in close collaboration with the tech lead, who reviewed the code and provided technical guidance throughout the process.</p>
                 <p>I also integrated OG tags, JSON schema, and optimised the site for SEO by conducting keyword research, refining titles and meta descriptions, creating descriptive URLs, and optimising images.</p>
                 </div>
             </div>
@@ -130,7 +129,7 @@ import { Image } from 'astro:assets';
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
 
                     <h2 class="text-2xl md:text-[2.5rem] font-semibold">Project outcome</h2>
                     
