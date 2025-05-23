@@ -15,7 +15,7 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText, 
 
 <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] max-w-screen-2xl mx-auto px-6 md:px-8 gap-8 md:gap-16 pb-10 md:pb-14">
   <div>
-    <h2 class="text-xl md:text-2xl font-semibold mb-4">Overview</h2>
+    <h2 class="text-xl md:text-2xl font-semibold mb-4">Project overview</h2>
     {Array.isArray(overview) ? (
       overview.map((paragraph) => (
         <p class="mb-6" set:html={paragraph} />
