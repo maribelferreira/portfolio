@@ -23,7 +23,7 @@ import { Image } from 'astro:assets';
 	<TopNav />
 	<HeroProject 
 		title="Letro app" 
-		subtitle="Led the end-to-end UI/UX design and the brand identity of Letro, an offline-compatible alternative to email."
+		subtitle="Led the end-to-end UI/UX design and the brand identity of Letro, an offline alternative to email."
 		imageSrc={LetroFeatured}
 		imageAlt="Letro Hero Image"
 	/>
@@ -51,11 +51,11 @@ import { Image } from 'astro:assets';
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
 
-                    <h2 class="text-2xl md:text-3xl font-semibold">Problem statement</h2>
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold">Problem statement</h2>
                     
 
                 <div>
-                    <p>In many regions, traditional messaging tools like Gmail or WhatsApp are rendered useless due to frequent blackouts, surveillance, and censorship. Letro aimed to fill that gap: a secure, offline-compatible alternative that works reliably in such constrained environments.
+                    <p>In many regions, frequent internet shutdowns limit the effectiveness of traditional messaging apps like Gmail or WhatsApp. Letro aimed to fill that gap: a secure, offline alternative that works reliably in such constrained environments.
                     </p>
                 </div>
             </div>
@@ -65,9 +65,9 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                <h2 class="text-2xl md:text-3xl font-semibold">Goals & objetives</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold">Goals & objetives</h2>
                 <div>
-                  <p>The challenge was to design a messaging experience that not only works intuitively without the internet for users in regions with heavy Internet restrictions, but also feels secure, trustworthy, and a delight to use.
+                  <p>The main goal was to design a messaging experience that not only works intuitively without the internet for people in regions with Internet restrictions, but also feels trustworthy and a delight to use.
                   </p>
                 </div>
             </div>
@@ -77,7 +77,7 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                <h2 class="text-2xl md:text-3xl font-semibold">Research: Understanding users in sensitive contexts</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold">Research</h2>
                 
                 <div>
                   <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users from targeted regions. This revealed crucial insights:
@@ -94,13 +94,14 @@ import { Image } from 'astro:assets';
 
     <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Designing from first principles</h2>
+		</div>
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
-                    <h2 class="text-2xl md:text-4xl font-semibold pb-4">Designing from first principles</h2>
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Addressing technical dependency</h3>
-                    <p>Letro works through Awala technology, requiring users to have both apps installed, an important technical dependency that shaped the onboarding experience.</p>
-                    <p>Working closely with the CEO and the lead developer, we designed an onboarding flow that automatically detects if Awala is installed, guiding users through the installation process when needed.</p>
-                    <p>This approach helped us educate users on the relationship between apps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
+                    <p>Letro works through Awala technology, requiring users to have both apps installed. Working closely with the CEO and the lead developer, we designed an onboarding flow that automatically detects if Awala is installed.</p>
+                    <p>This approach helped us educate users on the relationship between the twoapps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
                 </div>
                 <div>
                     <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
@@ -114,27 +115,24 @@ import { Image } from 'astro:assets';
                 </div>
                 <div class="space-y-4 order-first md:order-last">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Rethinking account creation</h3>
-                    <p>In close collaboration with our CEO and lead developer, we designed an innovative simplified onboarding flow that eliminated traditional email/password requirements. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This collaborative approach allowed us to:
+                    <p>In close collaboration with our CEO and lead developer, we designed a simplified onboarding flow that eliminated traditional email/password requirements. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This collaborative approach allowed us to:
                     </p>
                     <ul class="list-disc list-outside space-y-2 pl-4">
                         <li>Creates immediate regional familiarity, making the app feel more personalised.</li>
                         <li>Reduces friction by removing email and password entry.</li>
                         <li>Maintains privacy through anonymised identifiers.</li>
-                    </ul>
-                    <p>Our shared focus on user-centric design and technical feasibility made this innovative solution possible.</p>
-                </div>
+                    </ul>                </div>
             </div>
         </div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Designing for offline-first experiences</h3>
-                    <p>Every interaction had to work seamlessly in both offline and online modes. We couldn't rely on real-time feedback or server validation. Working with the team to understand the technical constraints, we designed for asynchronous sync with clear UI states and user feedback, especially for message delivery and drafts that:
+                    <p>Every interaction needed to function reliably both online and offline, without depending on real-time feedback or server validation. I partnered with the team to understand the technical limits and together designed asynchronous syncing with clear UI states that:
                     </p>
                     <ul class="list-disc list-outside space-y-2 ml-4">
                         <li>Clearly indicate message status (sent/pending/delivered) without requiring connectivity.</li>
                         <li>Provide appropriate feedback during connectivity gaps.</li>
-                        <li>Provides a clear call to action for users to try again later.</li>
                     </ul>
                 </div>
                 <div>
@@ -163,9 +161,9 @@ import { Image } from 'astro:assets';
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Clarity over convention
                     </h3>
-                    <p>During the user testing, I found that users are very familiar with Gmail and Whatsapp, but some of them found icon-only actions (like the paper plane for "send") confusing.
+                    <p>During the user testing, I found that some users are found icon-only actions (like the paper plane for "send" in Gmail) confusing.
                     </p>
-                    <p>Instead, Letro uses explicit text labels with supporting icons, such as a clearly labeled "Send" and "Reply" button, to reduce ambiguity and support varying levels of digital literacy.
+                    <p>Instead, Letro uses explicit text labels with supporting icons, such as a clearly labeled "Send" and "Reply" button, to reduce ambiguity.
                     </p>
                 </div>
                 <div>
@@ -184,7 +182,7 @@ import { Image } from 'astro:assets';
                     </h3>
                     <p>Building Letro meant designing a communication experience from the ground up, without assuming users had fast internet or up-to-date hardware.
                     </p>
-                    <p>We ensured Letro could run reliably on older Android phones. This meant lightweight screens, minimal animations, and optimised assets, without compromising clarity or usability.
+                    <p>We ensured Letro could run reliably on older Android phones. This meant lightweight screens, minimal animations, and optimised assets, without compromising usability.
                     </p>
                 </div>
 
@@ -198,13 +196,12 @@ import { Image } from 'astro:assets';
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Accessibility & multilingual UX
                     </h3>
-                    <p>Letro was localised into multiple languages, so I designed the UI to handle variable-length strings, right-to-left (RTL) support, and font legibility across scripts. I also ensured:
+                    <p>Letro was localised into several languages, so I designed the UI to support variable-length text, right-to-left (RTL) layouts, and readable fonts across different scripts. I also ensured:
                     </p>
                     <ul class="list-disc list-outside space-y-2 pl-4">
                         <li>High color contrast for readability in harsh lighting.</li>
-                        <li>Tap targets large enough for all users.</li>
-                        <li>Dark theme to reduce eye strain.</li>
-                        <li>Intuitive navigation without relying on icon-only actions.</li> 
+                        <li>Large tap targets for ease of use.</li>
+                        <li>A dark theme to reduce eye strain.</li>
                     </p>
                 </div>
                 <div>
