@@ -8,9 +8,10 @@ interface Props {
   liveUrl?: string;
   buttonText?: string;
   team?: string;
+  platform?: string;
 }
 
-const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText, team } = Astro.props;
+const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText, team, platform } = Astro.props;
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] max-w-screen-2xl mx-auto px-6 md:px-8 gap-8 md:gap-16 pb-10 md:pb-14">
@@ -69,6 +70,12 @@ const { overview, role, responsibilities, tools, timeline, liveUrl, buttonText, 
       <div>
         <h2 class="text-xl md:text-2xl font-semibold mb-2">Team</h2>
         <p>{team}</p>
+      </div>
+    )}
+    {platform && (
+      <div>
+        <h2 class="text-xl md:text-2xl font-semibold mb-2">Platform</h2>
+        <p>{platform}</p>
       </div>
     )}
   </div>
