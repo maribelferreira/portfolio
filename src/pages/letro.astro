@@ -37,9 +37,9 @@ import { Image } from 'astro:assets';
         'Wireframes, hi-fi prototypes, and design system.',
         'Custom illustrations and animations.',
         'Dev-ready documentation.',
-        'Close collaboration with the CEO and the lead developer to scope the MVP.'
+        'Close collaboration with the lead developer to scope the MVP.'
 	]}
-    team='UX/UI Designer, CEO and Developer'
+    team='UX/UI Designer, Lead Developer and Android Developer'
 	overview={[
 		'Letro is an offline alternative to email, designed to circumvent internet shutdowns. Unlike email, Letro offers end-to-end encryption, eliminates phishing and spamming, and users can send and receive messages without access to the Internet.',
 	]}
@@ -55,7 +55,10 @@ import { Image } from 'astro:assets';
                     
 
                 <div>
-                    <p>In many regions, frequent internet shutdowns limit the effectiveness of traditional messaging apps like Gmail or WhatsApp. Letro aimed to fill that gap: a secure, offline alternative that works reliably in such constrained environments.
+                    <p>
+                        People around the world are subject to Internet or telecommunications blackouts due to
+                        government orders or conflict, rendering them disconnected from the outside world.
+                        As an offline alternative to email, Letro would change that by enabling users to send and receive messages without the internet.
                     </p>
                 </div>
             </div>
@@ -67,7 +70,7 @@ import { Image } from 'astro:assets';
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
                 <h2 class="text-2xl md:text-[2.5rem] font-semibold">Goals & objetives</h2>
                 <div>
-                  <p>The main goal was to design a messaging experience that not only works intuitively without the internet for people in regions with Internet restrictions, but also feels trustworthy and a delight to use.
+                  <p>The main goal was to design a messaging experience that not only works intuitively, but also feels trustworthy and a delight to use.
                   </p>
                 </div>
             </div>
@@ -83,10 +86,10 @@ import { Image } from 'astro:assets';
                   <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users from targeted regions. This revealed crucial insights:
                   </p>
                   <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
-                    <li>Users were familiar with apps such as Gmail and WhatsApp, but often misinterpreted common UI conventions.</li>
-                    <li>Some users expressed significant skepticism toward offline messaging apps due to previous experiences with solutions that failed to work properly offline or had confusing and cluttered interfaces.</li>
+                    <li>Users were familiar with apps such as Gmail and WhatsApp, but often misinterpreted common iconography when not accompanied by text.</li>
+                    <li>Some users expressed significant skepticism toward offline messaging apps due to previous experiences with solutions that failed to work properly offline or had confusing interfaces.</li>
                     <li>Many users relied on older Android devices with limited processing power.</li>
-                    
+                  </ul>
                 </div>
             </div>
         </div>
@@ -100,8 +103,8 @@ import { Image } from 'astro:assets';
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Addressing technical dependency</h3>
-                    <p>Letro works through Awala technology, requiring users to have both apps installed. Working closely with the CEO and the lead developer, we designed an onboarding flow that automatically detects if Awala is installed.</p>
-                    <p>This approach helped us educate users on the relationship between the twoapps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
+                    <p>Letro depends on <a href="https://awala.app/en/network/" class="text-blue-500 hover:underline">Awala</a> to exchange data without the internet, requiring users to have both apps installed. Working with the lead developer, we designed an onboarding flow that automatically detects if Awala is installed.</p>
+                    <p>This approach helped us educate users on the relationship between the two apps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
                 </div>
                 <div>
                     <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
@@ -115,12 +118,12 @@ import { Image } from 'astro:assets';
                 </div>
                 <div class="space-y-4 order-first md:order-last">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Rethinking account creation</h3>
-                    <p>In close collaboration with our CEO and lead developer, we designed a simplified onboarding flow that eliminated traditional email/password requirements. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This collaborative approach allowed us to:
+                    <p>In close collaboration with the lead developer, we designed an onboarding flow that eliminated email or SMS verification as neither would work during telecommunications blackouts. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This approach enabled us to:
                     </p>
                     <ul class="list-disc list-outside space-y-2 pl-4">
-                        <li>Creates immediate regional familiarity, making the app feel more personalised.</li>
-                        <li>Reduces friction by removing email and password entry.</li>
-                        <li>Maintains privacy through anonymised identifiers.</li>
+                        <li>Provide friendly identifiers that users could easily share to connect with each other.</li>
+                        <li>Create immediate regional familiarity, making the app feel more personalised.</li>
+                        <li>Offer identifiers under our own domain names or the user's own domain names.</li>
                     </ul>                </div>
             </div>
         </div>
@@ -128,12 +131,7 @@ import { Image } from 'astro:assets';
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Designing for offline-first experiences</h3>
-                    <p>Every interaction needed to function reliably both online and offline, without depending on real-time feedback or server validation. I partnered with the team to understand the technical limits and together designed asynchronous syncing with clear UI states that:
-                    </p>
-                    <ul class="list-disc list-outside space-y-2 ml-4">
-                        <li>Clearly indicate message status (sent/pending/delivered) without requiring connectivity.</li>
-                        <li>Provide appropriate feedback during connectivity gaps.</li>
-                    </ul>
+                    <p>Every interaction needed to function reliably both online and offline, without depending on real-time feedback or server validation, so I partnered with the team to understand the technical limits and together design the UX for the asynchronous communication.
                 </div>
                 <div>
                     <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
@@ -148,9 +146,10 @@ import { Image } from 'astro:assets';
                 </div>
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Solving the contact pairing challenge</h3>
-                    <p>Unlike email's open sending model, Letro required a contact pairing system before communication. This posed a significant UX challenge, how to make this technical requirement intuitive without adding friction?
+                    <p>
+                        To avoid spam and phishing, especially when at-risk users are targeted, Letro required users to authorise each other upfront, before they can send messages for the first time.
                     </p>
-                    <p><strong>The solution:</strong> We developed a streamlined pairing flow that visually resembles "adding contacts" in messaging apps rather than email's addressing system, making an unfamiliar concept immediately understandable.</p>
+                    <p>We developed a streamlined pairing flow that loosely resembled "adding contacts" on some social media apps, whereby each user would simply enter the other's identifier, and the pairing would be completed once there was a match.</p>
                 </div>
             </div>
         </div>
@@ -161,9 +160,9 @@ import { Image } from 'astro:assets';
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Clarity over convention
                     </h3>
-                    <p>During the user testing, I found that some users are found icon-only actions (like the paper plane for "send" in Gmail) confusing.
+                    <p>During the user testing, I found that some users found icon-only actions (like the paper plane for "send" in Gmail) confusing.
                     </p>
-                    <p>Instead, Letro uses explicit text labels with supporting icons, such as a clearly labeled "Send" and "Reply" button, to reduce ambiguity.
+                    <p>Instead, Letro uses explicit labels with supporting icons on primary CTAs, such as the "Send" and "Reply" buttons, to reduce ambiguity.
                     </p>
                 </div>
                 <div>
@@ -217,7 +216,7 @@ import { Image } from 'astro:assets';
                     <h2 class="text-2xl md:text-4xl font-semibold">Visual design</h2>
                 <div class="space-y-4">
                     <p>Letro's visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts. I created a custom bird mascot to serve as a visual guide throughout the app, adding a layer of warmth and personality to an otherwise serious tool. </p>
-                    <p>To support user comfort and extend accessibility, I also designed a fully-compatible dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
+                    <p>To support user comfort and extend accessibility, I also designed a dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
                 </div>
             </div>
             <div class="mt-8">
