@@ -19,10 +19,10 @@ import { Image } from 'astro:assets';
 <Layout title="Awala Website Redesign" description="Designed and built a responsive multi-language marketing site for Awala, a platform to build offline-compatible apps, significantly increasing traffic by 4x and user engagement by 20% in 6 months.">
 	<TopNav />
 	<HeroProject 
-		title="Ev.energy Website Redesign" 
-		subtitle="Designed and built a responsive multi-language marketing site for Ev.energy, a platform to build offline-compatible apps, significantly increasing traffic by 4x and user engagement by 20% in 6 months."
+		title="ev.energy app" 
+		subtitle="Collaborated with a cross-functional team to enhance the user experience of an EV charging app, and designed customisable white-label versions of the app."
 		imageSrc={FeaturedEv}
-		imageAlt="Ev.energy Website Redesign Hero Image"
+		imageAlt="Ev.energy app"
 	/>
 	<ProjectDetails 
 	tools='Figma, FigmaJam, Notion, Jira, Maze, Loom, Lottie, Adobe Illustrator, GitHub.' 
@@ -35,42 +35,57 @@ import { Image } from 'astro:assets';
        
 	]}
 	/>
-    <section class="py-16 border-t border-neutral-700">
-        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center px-8">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 class="text-4xl font-bold leading-tight mb-4">My impact on ev.energy</h2>
-                <ul class="list-disc space-y-5 pt-8 pl-4">
-                    <li>Collaborated with PMs, designers, and engineers in an Agile environment to scope, design and deliver major features that improved the native app’s user experience.</li>
-                    <li>Redesigned the Charge History interface to improve content structure and visual clarity, leading to higher user satisfaction reflected in app store reviews and usability testing.
-                    </li>
-                    <li>Partnered with UX researchers to run tests of design prototypes.</li>
-                    <li>Contributed to the app’s design system to support scalability, consistency, and efficiency across teams.
-                    </li>
-                    <li>Designed customisable white-label versions of the app, adapting user flows and UI to meet diverse client needs while maintaining brand consistency.</li>
-                    <li>Produced detailed handoff documentation to support the developers’ execution of the design requirements.</li>
-                    <li>Designed App Store/Google Play assets, marketing landing pages and other collateral for ev.energy and its partners.</li>
-                   </ul> 
+        <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8 md:space-y-16">
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+                <h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">My impact on ev.energy</h2>
             </div>
-            <div class="md:w-1/2">
-                <Image src={EvMockups} alt="Ev Mockups" class="w-full h-auto" />
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+                    <div class="space-y-4">
+                        <p>Collaborated with PMs, designers, and engineers in an Agile environment to scope, design and deliver major features that improved the native app’s user experience.</p>
+                        <p>Examples of major features I contributed to: smart charging, solar charging, rewards, charge history, among others.</p>
+                    </div>
+                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="border-t border-neutral-700 py-8 md:py-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-left space-y-8">
-            <div class="space-y-4">
-                <h2 class="text-2xl md:text-3xl font-semibold">These are some of the work examples</h2>
-            </p>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+                <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
+                    <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                    <div class="space-y-4">
+                        <p>Redesigned the Charge History interface to improve content structure and visual clarity, leading to higher user satisfaction reflected in app store reviews and usability testing.</p>
+                    </div>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto">
-                <Image src={EvScreens} alt="Ev Screens" />
-                <Image src={EvBanner} alt="Ev Banner" />
-                <Image src={Volkswagen} alt="Volkswagen" />
-                <Image src={NationalGrid} alt="National Grid" />
-                <Image src={MceBanner} alt="Mce Banner" />
-                <Image src={SiliconValley} alt="Silicon Valley" />         </div>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+                    <div class="space-y-4">
+                        <p>Designed customisable white-label versions of the app, adapting user flows and UI to meet diverse client needs while maintaining brand consistency.</p>
+                        <p>Clients included: National Grid, Volkswagen, Silicon Valley Clean Energy, MCE, amongst others.</p>
+                    </div>
+                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                </div>
             </div>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+                <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
+                    <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                    <div class="space-y-4">
+                        <p>Designed App Store/Google Play assets, marketing landing pages and other collateral for ev.energy and its partners.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+                    <ul class="list-disc space-y-5 pt-8 pl-4">
+                        <li>Produced detailed handoff documentation to support the developers’ execution of the design requirements.</li>
+                        <li>Partnered with UX researchers to run tests of design prototypes.</li>
+                        <li>Contributed to the app’s design system to support scalability, consistency, and efficiency across teams.</li>
+                    </ul>
+                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                </div>
+            </div>
+            
         </section>
+
+
 	<Footer />
 </Layout>
