@@ -6,14 +6,14 @@ import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
 import GoogleListings from '../assets/google-listings.png';
 import LetroFeatured from '../assets/letro-featured.png';
-import DarkTheme from '../assets/dark-theme.png';
 import SendButton from '../assets/send-button.png';
-import Onboarding from '../assets/onboarding.png';
 import LetroIllustrations from '../assets/letro-illustrations.png';
 import LetroOnboarding from '../assets/letro-onboarding.png';
 import LetroAccount from '../assets/letro-account.png';
 import PairContact from '../assets/pair-contact.png';
 import Accessibility from '../assets/accessibility.png';
+import LetroDarkTheme from '../assets/letro-dark-theme.png';
+import OfflineExperience from '../assets/offline-experience.png';
 
 
 import { Image } from 'astro:assets';
@@ -128,13 +128,13 @@ import { Image } from 'astro:assets';
             </div>
         </div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Designing for offline-first experiences</h3>
                     <p>Every interaction needed to function reliably both online and offline, without depending on real-time feedback or server validation, so I partnered with the team to understand the technical limits and together design the UX for the asynchronous communication.
                 </div>
                 <div>
-                    <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={OfflineExperience} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
             </div>
         </div>
@@ -204,7 +204,7 @@ import { Image } from 'astro:assets';
             </div>
             
             <div class="mt-8">
-                <Image src={DarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
+                <Image src={LetroDarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
             <div class="mt-8">
                 <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
