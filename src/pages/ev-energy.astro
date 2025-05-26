@@ -5,13 +5,16 @@ import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
 import EvMockups from '../assets/ev-mockups.png';
-import FeaturedEv from '../assets/featured-ev.png';
-import EvScreens from '../assets/ev-screens.png';
 import EvBanner from '../assets/ev-banner.png';
 import MceBanner from '../assets/mce-banner.png';
 import SiliconValley from '../assets/silicon-valley.png';
 import Volkswagen from '../assets/volkswagen.png';
 import NationalGrid from '../assets/national-grid.png';
+import MCE from '../assets/mce.png';
+import EvenergyProject from '../assets/evenergy-project.png';
+import SVCEBanner from '../assets/svce-banner.png';
+import GooglePlay from '../assets/google-play.png';
+import GooglePlayWhiteLabels from '../assets/google-play-whitelabels.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -21,72 +24,66 @@ import { Image } from 'astro:assets';
 	<HeroProject 
 		title="ev.energy app" 
 		subtitle="Contributed to the improvement of the user experience of an EV charging app, and designed custom versions of the white-labelled app."
-		imageSrc={FeaturedEv}
+		imageSrc={EvenergyProject}
 		imageAlt="Ev.energy app"
 	/>
 	<ProjectDetails 
 	tools='Figma, FigmaJam, Notion, Jira, Maze, Loom, Lottie, Adobe Illustrator, GitHub.' 
 	timeline='June 2021 - Dec 2022' 
-	role={[
-		'As a Product Designer, I partnered closely with cross-functional teams to ship high-impact features, improve the user experience, and scale the design system. I also led the design of white-labelled adaptations and marketing assets to support go-to-market efforts.', 
+	role={[ 
+        '•	Collaborated with PMs, designers, and engineers in an Agile environment to scope, design and deliver major features that improved the native app’s user experience.',
+        '•	Designed customisable white-label versions of the app, adapting user flows and UI to meet diverse client needs while maintaining brand consistency.',
+        '•	Produced detailed handoff documentation to support the developers’ execution of the design requirements.',
+        '•	Partnered with UX researchers to run tests of design prototypes.',
+        '•	Contributed to the app’s design system to support scalability, consistency, and efficiency across teams.',
 	]}
     platform='iOS, Android'
 	overview={[
-		'Worked on the product team of a mobile app for Electric Vehicle charging, which was also available as a white-labelled product for customers like Volkswagen, NationalGrid, MCE Sync, and Silicon Valley Clean Energy.',
+		'Worked on the product team of <a href="https://ev.energy" target="_blank" class="text-indigo-400 hover:underline">ev.energy</a>, a mobile app for Electric Vehicle charging, which was also available as a white-labelled product for customers like Volkswagen, NationalGrid, MCE Sync, and Silicon Valley Clean Energy.',
        
 	]}
 	/>
         <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8 md:space-y-16">
             <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-                <h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">My impact on ev.energy</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Some of my contributions to ev.energy</h2>
             </div>
-            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
-                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
-                    <div class="space-y-4">
-                        <p>Collaborated with PMs, designers, and engineers in an Agile environment to scope, design and deliver major features that improved the native app’s user experience.</p>
-                        <p>Examples of major features I contributed to: smart charging, solar charging, rewards and charge history.</p>
-                    </div>
-                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
-                </div>
-            </div>
-            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-base md:text-xl">
                 <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
-                    <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+                    
                     <div class="space-y-4">
+                        <h3 class="text-xl md:text-3xl font-semibold">Charge History</h3>
                         <p>Redesigned the Charge History interface to improve content structure and visual clarity, leading to higher user satisfaction reflected in app store reviews and usability testing.</p>
                     </div>
+                    <Image src={EvMockups} alt="Ev Screens" class="w-full h-auto" />
                 </div>
             </div>
-            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
-                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
-                    <div class="space-y-4">
-                        <p>Designed customisable white-label versions of the app, adapting user flows and UI to meet diverse client needs while maintaining brand consistency.</p>
-                        <p>Clients included: National Grid, Volkswagen, Silicon Valley Clean Energy, MCE, amongst others.</p>
-                    </div>
-                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-base md:text-xl">    
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-3xl font-semibold">Whitelabels</h3>
+                    <p>Clients included: National Grid, Volkswagen, Silicon Valley Clean Energy, MCE Sync, amongst others.</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+                    <Image src={Volkswagen} alt="Volkswagen" class="w-full h-auto" />
+                    <Image src={NationalGrid} alt="National Grid" class="w-full h-auto" />
+                    <Image src={SiliconValley} alt="Silicon Valley" class="w-full h-auto" />
+                    <Image src={MCE} alt="MCE" class="w-full h-auto" />
                 </div>
             </div>
-            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
-                <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
-                    <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
-                    <div class="space-y-4">
-                        <p>Designed App Store/Google Play assets, marketing landing pages and other visual assets for ev.energy and its partners.</p>
-                    </div>
+            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-base md:text-xl">    
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-3xl font-semibold">Marketing materials</h3>
+                    <p>Designed App Store/Google Play assets, marketing landing pages and other visual assets to support go-to-market efforts for ev.energy and its partners.</p>
                 </div>
-            </div>
-            <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 text-xl">
-                <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
-                    <ul class="list-disc space-y-5 pt-8 pl-4">
-                        <li>Produced detailed handoff documentation to support the developers’ execution of the design requirements.</li>
-                        <li>Partnered with UX researchers to run tests of design prototypes.</li>
-                        <li>Contributed to the app’s design system to support scalability, consistency, and efficiency across teams.</li>
-                    </ul>
-                        <Image src={EvScreens} alt="Ev Screens" class="w-full h-auto" />
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+                    <Image src={EvBanner} alt="Volkswagen" class="w-full h-auto" />
+                    <Image src={SVCEBanner} alt="National Grid" class="w-full h-auto" />
                 </div>
-            </div>
-            
+                <Image src={GooglePlay} alt="Google Play" class="w-full h-auto mt-4 md:mt-8" />
+                <Image src={GooglePlayWhiteLabels} alt="Google Play White Labels" class="w-full h-auto mt-4 md:mt-8" />
+
+            </div>        
         </section>
-
-
 	<Footer />
 </Layout>
