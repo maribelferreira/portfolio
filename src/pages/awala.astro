@@ -5,9 +5,12 @@ import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
 import FeaturedAwala from '../assets/featured-awala.png';
-import OldAwala from '../assets/old-awala.png';
-import AwalaHomepage from '../assets/awala-homepage.png';
+import AwalaOldWebsite from '../assets/awala-old-website.gif';
+import VPNHero from '../assets/vpn-hero.gif';
 import AwalaWireframe from '../assets/awala-wireframe.png';
+import AwalaHero from '../assets/awala-hero.png';
+import AwalaNetwork from '../assets/awala-network.gif';
+import AwalaCTA from '../assets/awala-cta.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -49,7 +52,7 @@ import { Image } from 'astro:assets';
                     </p> 
                 </div>
                 <div>
-                    <Image src={AwalaWireframe} alt="Awala Wireframe" class="w-full h-auto" />
+                    <Image src={AwalaOldWebsite} alt="Awala Wireframe" class="w-full h-auto" />
                 </div>
             </div>
         </div>
@@ -78,14 +81,14 @@ import { Image } from 'astro:assets';
                     <p>The hero section had a simple content structure with bold, concise headlines to communicate Awala's purpose and benefits, including social proof (e.g. Mozilla Builders, Oxford) to build credibility.</p>
                     
                 </div>
-                    <Image src={AwalaWireframe} alt="Awala Wireframe" class="w-full h-auto" />
+                    <Image src={AwalaHero} alt="Awala Wireframe" class="w-full h-auto" />
             </div>
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="order-last md:order-first">
-                    <Image src={AwalaWireframe} alt="Veraid Hero" class="w-full h-auto" />
+                    <Image src={AwalaNetwork} alt="Awala Network" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4">
                     <h3 class="text-2xl md:text-3xl font-semibold">Modern visual design and branding</h3>
@@ -100,14 +103,14 @@ import { Image } from 'astro:assets';
                     <h3 class="text-2xl md:text-3xl font-semibold">Strategic CTAs and conversion funnels</h3>
                     <p>Strategically placed, high-contrast call-to-action buttons throughout the site encourage downloads and newsletter signups.</p>            
                 </div>
-                <Image src={AwalaWireframe} alt="Veraid Hero" class="w-full h-auto" />
+                <Image src={AwalaCTA} alt="Awala CTA" class="w-full h-auto" />
             </div>
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="order-last md:order-first">
-                    <Image src={AwalaWireframe} alt="Veraid Hero" class="w-full h-auto" />
+                    <Image src={VPNHero} alt="VPN Hero" class="w-full h-auto rounded-lg" />
                 </div>
                 <div class="space-y-4">
                     <h3 class="text-2xl md:text-3xl font-semibold">Interactive hero section on the Awala VPN page</h3>
