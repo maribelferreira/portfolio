@@ -3,9 +3,19 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 const currentPath = Astro.url.pathname;
 
+// List of project pages (all pages except main navigation pages)
+const projectPages = ['/letro', '/awala', '/veraid', '/ev-energy', '/natural-high', '/audistar', '/musho'];
+
 const isActive = (path: string) => {
   const normalizedCurrent = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
   const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path;
+  
+  // For portfolio link, also activate when on project pages
+  if (normalizedPath === '/portfolio') {
+    return (normalizedCurrent === normalizedPath || projectPages.includes(normalizedCurrent)) ? "text-[#9383f7]" : "";
+  }
+  
+  // For other links, use exact match
   return normalizedCurrent === normalizedPath ? "text-[#9383f7]" : "";
 }
 ---
