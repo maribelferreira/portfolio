@@ -51,7 +51,7 @@ import { Image } from 'astro:assets';
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
 
-                    <h2 class="text-2xl md:text-[2.5rem] font-semibold">Problem statement</h2>
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Problem statement</h2>
                     
 
                 <div>
@@ -68,7 +68,7 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                <h2 class="text-2xl md:text-[2.5rem] font-semibold">Goals & objetives</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Goals & objetives</h2>
                 <div>
                   <p>The main goal was to design a messaging experience that not only works intuitively, but also feels trustworthy and a delight to use.
                   </p>
@@ -80,7 +80,7 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                <h2 class="text-2xl md:text-[2.5rem] font-semibold">Research</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Research</h2>
                 
                 <div>
                   <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users from targeted regions. This revealed crucial insights:
@@ -102,7 +102,7 @@ import { Image } from 'astro:assets';
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Addressing technical dependency</h3>
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Addressing technical dependency</h3>
                     <p>Letro depends on <a href="https://awala.app/en/network/" class="text-indigo-400 hover:underline">Awala</a> to exchange data without the internet, requiring users to have both apps installed. Working with the lead developer, we designed an onboarding flow that automatically detects if Awala is installed.</p>
                     <p>This approach helped us educate users on the relationship between the two apps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
                 </div>
@@ -117,7 +117,7 @@ import { Image } from 'astro:assets';
                     <Image src={LetroAccount} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4 order-first md:order-last">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Rethinking account creation</h3>
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Rethinking account creation</h3>
                     <p>In close collaboration with the lead developer, we designed an onboarding flow that eliminated email or SMS verification as neither would work during telecommunications blackouts. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This approach enabled us to:
                     </p>
                     <ul class="list-disc list-outside space-y-2 pl-4">
@@ -145,7 +145,7 @@ import { Image } from 'astro:assets';
                     <Image src={PairContact} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Solving the contact pairing challenge</h3>
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Solving the contact pairing challenge</h3>
                     <p>
                         To avoid spam and phishing, especially when at-risk users are targeted, Letro required users to authorise each other upfront, before they can send messages for the first time.
                     </p>
@@ -157,7 +157,7 @@ import { Image } from 'astro:assets';
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Clarity over convention
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Clarity over convention
                     </h3>
                     <p>During the user testing, I found that some users found icon-only actions (like the paper plane for "send" in Gmail) confusing.
                     </p>
@@ -172,11 +172,11 @@ import { Image } from 'astro:assets';
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
-                <div>
+                <div class="order-last md:order-first">
                     <Image src={Accessibility} alt="Natural High Safaris" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Accessibility & multilingual UX
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Accessibility & multilingual UX
                     </h3>
                     <p>Letro was localised into several languages, so I designed the UI to support variable-length text, right-to-left (RTL) layouts, and readable fonts across different scripts. I also ensured:
                     </p>
@@ -193,7 +193,7 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                    <h2 class="text-2xl md:text-4xl font-semibold">Visual design</h2>
+                    <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Visual design</h2>
                 <div class="space-y-4">
                     <p>Letro's visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts. I created a custom bird mascot to serve as a visual guide throughout the app, adding a layer of warmth and personality to an otherwise serious tool. </p>
                     <p>To support user comfort and extend accessibility, I also designed a dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
@@ -210,7 +210,7 @@ import { Image } from 'astro:assets';
                 <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
             <div class="mt-8 space-y-4">
-                <h3 class="text-2xl md:text-4xl font-semibold">Design system</h3>
+                <h3 class="text-2xl md:text-4xl font-semibold leading-tight">Design system</h3>
                 <p>To ensure platform-native usability and speed up development, I followed Material Design guidelines throughout the UI, aligning components and interaction patterns with Android standards.</p>
             </div>
         </div>
