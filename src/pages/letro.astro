@@ -204,14 +204,17 @@ import { Image } from 'astro:assets';
             <div class="mt-8">
                 <Image src={LetroIllustrations} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 md:gap-16 items-center mt-16 max-w-screen-xl mx-auto">
+
+            <div class="mt-16 text-center space-y-4 max-w-screen-xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Animations for potentially slow actions</h2>
+                <p class="max-w-screen-lg mx-auto"> Two actions in particular could take a long time depending on device characteristics and network conditions, so I designed animations to assure them that progress is happening in a friendly way.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 md:gap-16 items-center justify-center mt-8 max-w-screen-xl mx-auto">
                 <div class="space-y-3">
-                    <h2 class="text-xl md:text-4xl font-semibold leading-tight">Animations that add charm and purpose</h2>
-                    <p>To make Letro feel approachable and alive, I designed two custom animations that guide the user through key transitional moments with clarity and personality.</p>
-                    <h3 class="text-lg md:text-3xl font-semibold leading-tight pt-6">Awala Setup – Loading Animation
+                    <h3 class="text-xl md:text-[1.75rem] font-semibold leading-tight">Connection to Awala
                     </h3>
-                    <p>This animation provides a friendly visual cue during setup, turning idle time into a moment of engagement. It offers reassurance that the app is working in the background while maintaining Letro’s approachable and trustworthy tone.
-                    </p>
+                    <p>Which could take up to 15 seconds in the oldest devices we tested.</p>
                 </div>
                 <div>
                     <Image src={LetroBird} alt="Natural High Safaris" class="w-3/3 h-auto rounded-lg" />
@@ -223,16 +226,16 @@ import { Image } from 'astro:assets';
                     <Image src={LetroLoading} alt="Natural High Safaris" class="w-3/3 h-auto rounded-lg" />
                 </div>
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-3xl font-semibold leading-tight">Onboarding – “Hold Tight” Animation
+                    <h3 class="text-xl md:text-[1.75rem] font-semibold leading-tight">Account creation
                     </h3>
-                    <p>It reinforces Letro’s calm, friendly personality while reassuring users that progress is happening behind the scenes. Designed to reduce perceived wait time and build emotional connection during onboarding.
+                    <p>Which could take around 6 seconds on a slow connection, or weeks in the most extreme cases when the Internet is unavailable.
                     </p>
                 </div>
             </div>
             
             <div class="mt-16 space-y-4">
                 <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Dark theme</h2>
-                <p>To support user comfort and extend accessibility, I also designed a dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
+                <p>To support user comfort and extend accessibility, I also designed a dark theme. Both light and dark themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
                 <Image src={LetroDarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
 
