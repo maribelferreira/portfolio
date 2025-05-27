@@ -14,6 +14,8 @@ import PairContact from '../assets/pair-contact.png';
 import Accessibility from '../assets/accessibility.png';
 import LetroDarkTheme from '../assets/letro-dark-theme.png';
 import OfflineExperience from '../assets/offline-experience.png';
+import LetroBird from '../assets/letro-bird.gif';
+import LetroLoading from '../assets/letro-loading.gif';
 
 
 import { Image } from 'astro:assets';
@@ -195,18 +197,48 @@ import { Image } from 'astro:assets';
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
                     <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Visual design</h2>
                 <div class="space-y-4">
-                    <p>Letro's visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts. I created a custom bird mascot to serve as a visual guide throughout the app, adding a layer of warmth and personality to an otherwise serious tool. </p>
-                    <p>To support user comfort and extend accessibility, I also designed a dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
+                    <p>Letro's visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts.</p>
+                    <p>I created illustrations including a custom bird mascot to guide users visually, adding warmth and playfulness. A calming color palette, clean typography, and purposeful microinteractions all worked together to make the experience approachable without downplaying its seriousness.</p>
                 </div>
             </div>
             <div class="mt-8">
                 <Image src={LetroIllustrations} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 md:gap-16 items-center mt-16 max-w-screen-xl mx-auto">
+                <div class="space-y-3">
+                    <h2 class="text-xl md:text-4xl font-semibold leading-tight">Animations that add charm and purpose</h2>
+                    <p>To make Letro feel approachable and alive, I designed two custom animations that guide the user through key transitional moments with clarity and personality.</p>
+                    <h3 class="text-lg md:text-3xl font-semibold leading-tight pt-6">Awala Setup – Loading Animation
+                    </h3>
+                    <p>This animation provides a friendly visual cue during setup, turning idle time into a moment of engagement. It offers reassurance that the app is working in the background while maintaining Letro’s approachable and trustworthy tone.
+                    </p>
+                </div>
+                <div>
+                    <Image src={LetroBird} alt="Natural High Safaris" class="w-3/3 h-auto rounded-lg" />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 md:gap-16 items-center max-w-screen-xl mx-auto mt-16">
+                <div>
+                    <Image src={LetroLoading} alt="Natural High Safaris" class="w-3/3 h-auto rounded-lg" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-3xl font-semibold leading-tight">Onboarding – “Hold Tight” Animation
+                    </h3>
+                    <p>It reinforces Letro’s calm, friendly personality while reassuring users that progress is happening behind the scenes. Designed to reduce perceived wait time and build emotional connection during onboarding.
+                    </p>
+                </div>
+            </div>
             
-            <div class="mt-8">
+            <div class="mt-16 space-y-4">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Dark theme</h2>
+                <p>To support user comfort and extend accessibility, I also designed a dark theme. Both themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
                 <Image src={LetroDarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
-            <div class="mt-8">
+
+            <div class="mt-16 space-y-4">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Google Play Store listing</h2>
+                <p>I also designed the app's Google Play Store listing to reflect the app's core values of privacy, security, and trustworthiness.</p>
                 <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
             <div class="mt-8 space-y-4">
