@@ -20,10 +20,10 @@ const isActive = (path: string) => {
 }
 ---
 
-<nav class="py-5 md:py-6 px-6 lg:px-8 border-b border-[#2E2E2E] bg-black">
-  <div class="flex justify-between items-center max-w-screen-2xl mx-auto">
+<nav class="py-5 md:py-6 border-b border-[#2E2E2E] bg-black">
+  <div class="flex justify-between items-center max-w-screen-2xl mx-auto px-4 md:px-6">
     <!-- Logo -->
-    <div class="flex items-center">
+    <div>
       <a href="/"><Image src={logo} alt="Logo" class="h-6 lg:h-8 w-auto" /></a>
     </div>
 
@@ -39,7 +39,7 @@ const isActive = (path: string) => {
     </label>
 
     <!-- Nav items -->
-    <div class="nav-items absolute lg:relative right-8 top-20 lg:top-0 bg-[#25212e] lg:bg-transparent p-8 lg:p-0 rounded-lg shadow-lg lg:shadow-none hidden lg:block">
+    <div class="nav-items absolute lg:relative top-20 lg:top-0 left-0 right-0 lg:left-auto lg:right-auto bg-black lg:bg-transparent p-6 lg:p-0 hidden lg:block">
       <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 text-white">
         <li><a href="/portfolio" class={`nav-link ${isActive("/portfolio")}`}>Portfolio</a></li>
         <li><a href="/about" class={`nav-link ${isActive("/about")}`}>About</a></li>
