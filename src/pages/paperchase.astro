@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import GoogleListings from '../assets/google-listings.png';
+import SendButton from '../assets/send-button.png';
+import LetroIllustrations from '../assets/letro-illustrations.png';
+import LetroOnboarding from '../assets/letro-onboarding.png';
+import LetroAccount from '../assets/letro-account.png';
+import PairContact from '../assets/pair-contact.png';
+import Accessibility from '../assets/accessibility.png';
+import LetroDarkTheme from '../assets/letro-dark-theme.png';
+import OfflineExperience from '../assets/offline-experience.png';
+import AccountCreation from '../assets/account-creation.gif';
+import AwalaConection from '../assets/awala-conection.gif';
+import PaperchaseThumbnail from '../assets/paperchase-thumbnail.png';
+
+
+import { Image } from 'astro:assets';
+---
+
+<Layout title="Letro app" description="Led the end-to-end UI/UX design and the brand identity of Letro, an offline-compatible alternative to email.">
+	<TopNav />
+	<HeroProject 
+		title="Paperchase" 
+		subtitle="Optimised UX & Checkout Flow of Paperchase, leading to a 20% boost in engagement and a seamless shopping experience."
+		imageSrc={PaperchaseThumbnail}
+		imageAlt="Paperchase Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, Maze, Illustrator, Asana. ' 
+	timeline='2024' 
+	role='I led the UX/UI and brand design for Letro, including:'
+	responsibilities={[
+        'User research, competitive analysis, and usability testing.',
+        'Information architecture and user flows.',
+        'Wireframes, hi-fi prototypes, and design system.',
+        'Custom illustrations and animations.',
+        'Dev-ready documentation.',
+        'Close collaboration with the lead developer to scope the MVP.'
+	]}
+    team='UX/UI Designer, Lead Developer and Android Developer'
+	overview={[
+		'Paperchase is an international chain of stationery stores which were established in the United Kingdom but has since expanded into Europe, the USA and United Arab Emirates and have more than 125 stores across the UK.',
+	]}
+	liveUrl='https://letro.app/en/'
+	buttonText='Learn more about Letro'
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Problem statement</h2>
+                <div>
+                    <p>
+                        The client aimed to redesign their e-commerce website and the mobile app, to increase content engagement and better conversion rate by elevating their UI and user experience. 
+                    </p>
+                    <p>The client realised they were missing a huge market opportunity. They wanted to start with understanding their target audience. I worked on the digital team leading the UX and UI design for the project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Goals & objetives</h2>
+                <div>
+                  <p>The main goal was to design a messaging experience that not only works intuitively, but also feels trustworthy and a delight to use.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Research</h2>
+                
+                <div>
+                  <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users from targeted regions. This revealed crucial insights:
+                  </p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                    <li>Users were familiar with apps such as Gmail and WhatsApp, but often misinterpreted common iconography when not accompanied by text.</li>
+                    <li>Some users expressed significant skepticism toward offline messaging apps due to previous experiences with solutions that failed to work properly offline or had confusing interfaces.</li>
+                    <li>Many users relied on older Android devices with limited processing power.</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Designing from first principles</h2>
+		</div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Addressing technical dependency</h3>
+                    <p>Letro depends on <a href="https://awala.app/en/network/" class="text-indigo-400 hover:underline">Awala</a> to exchange data without the internet, requiring users to have both apps installed. Working with the lead developer, we designed an onboarding flow that automatically detects if Awala is installed.</p>
+                    <p>This approach helped us educate users on the relationship between the two apps without technical jargon, and reduce installation drop-off through contextual guidance.</p>
+                </div>
+                <div>
+                    <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div>
+                    <Image src={LetroAccount} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4 order-first md:order-last">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Rethinking account creation</h3>
+                    <p>In close collaboration with the lead developer, we designed an onboarding flow that eliminated email or SMS verification as neither would work during telecommunications blackouts. Instead, users create accounts with just a username paired with a localised domain (e.g., @guayoyo.cafe in Venezuela). This approach enabled us to:
+                    </p>
+                    <ul class="list-disc list-outside space-y-2 pl-4">
+                        <li>Provide friendly identifiers that users could easily share to connect with each other.</li>
+                        <li>Create immediate regional familiarity, making the app feel more personalised.</li>
+                        <li>Offer identifiers under our own domain names or the user's own domain names.</li>
+                    </ul>                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Designing for offline-first experiences</h3>
+                    <p>Every interaction needed to function reliably both online and offline, without depending on real-time feedback or server validation, so I partnered with the team to understand the technical limits and together design the UX for the asynchronous communication.
+                </div>
+                <div>
+                    <Image src={OfflineExperience} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="order-last md:order-first">
+                    <Image src={PairContact} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Solving the contact pairing challenge</h3>
+                    <p>
+                        To avoid spam and phishing, especially when at-risk users are targeted, Letro required users to authorise each other upfront, before they can send messages for the first time.
+                    </p>
+                    <p>We developed a streamlined pairing flow that loosely resembled "adding contacts" on some social media apps, whereby each user would simply enter the other's identifier, and the pairing would be completed once there was a match.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Clarity over convention
+                    </h3>
+                    <p>During the user testing, I found that some users found icon-only actions (like the paper plane for "send" in Gmail) confusing.
+                    </p>
+                    <p>Instead, Letro uses explicit labels with supporting icons on primary CTAs, such as the "Send" and "Reply" buttons, to reduce ambiguity.
+                    </p>
+                </div>
+                <div>
+                    <Image src={SendButton} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="order-last md:order-first">
+                    <Image src={Accessibility} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Accessibility & multilingual UX
+                    </h3>
+                    <p>Letro was localised into several languages, so I designed the UI to support variable-length text, right-to-left (RTL) layouts, and readable fonts across different scripts. I also ensured:
+                    </p>
+                    <ul class="list-disc list-outside space-y-2 pl-4">
+                        <li>High color contrast for readability in harsh lighting.</li>
+                        <li>Large tap targets for ease of use.</li>
+                        <li>A dark theme to reduce eye strain.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Visual design</h2>
+                <div class="space-y-4">
+                    <p>Letro's visual identity was designed to feel friendly, calm, and trustworthy, qualities often missing in apps associated with surveillance-heavy or politically tense contexts.</p>
+                    <p>I created illustrations including a custom bird mascot to guide users visually, adding warmth and playfulness. A calming color palette, clean typography, and purposeful microinteractions all worked together to make the experience approachable without downplaying its seriousness.</p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <Image src={LetroIllustrations} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+
+            <div class="mt-16 text-center space-y-4 max-w-screen-xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Animations for potentially slow actions</h2>
+                <p class="max-w-screen-lg mx-auto"> Two actions in particular could take a long time depending on device characteristics and network conditions, so I designed animations to assure them that progress is happening in a friendly way.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 md:gap-16 items-center justify-center mt-12 max-w-5xl mx-auto">
+                <div class="space-y-3">
+                    <h3 class="text-xl md:text-[1.75rem] font-semibold leading-tight">Connection to Awala
+                    </h3>
+                    <p>Which could take up to 15 seconds in the oldest devices we tested.</p>
+                </div>
+                <div>
+                    <Image src={AwalaConection} alt="Animation of the connection to Awala" class="lg:w-3/3 h-auto mx-auto rounded-lg" />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 md:gap-16 items-center max-w-5xl mx-auto mt-16">
+                <div>
+                    <Image src={AccountCreation} alt="Animation of the account creation" class="lg:w-3/3 h-auto mx-auto rounded-lg" />
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.75rem] font-semibold leading-tight">Account creation
+                    </h3>
+                    <p>Which could take around 6 seconds on a slow connection, or weeks in the most extreme cases when the Internet is unavailable.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 space-y-4">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Dark theme</h2>
+                <p>To support user comfort and extend accessibility, I also designed a dark theme. Both light and dark themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
+                <Image src={LetroDarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+
+            <div class="mt-16 space-y-4">
+                <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Google Play Store listing</h2>
+                <p>I also designed the app's Google Play Store listing to reflect the app's core values of privacy, security, and trustworthiness.</p>
+                <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
+            </div>
+            <div class="mt-8 space-y-4">
+                <h3 class="text-2xl md:text-4xl font-semibold leading-tight">Design system</h3>
+                <p>To ensure platform-native usability and speed up development, I followed Material Design guidelines throughout the UI, aligning components and interaction patterns with Android standards.</p>
+            </div>
+        </div>
+    </section>
+	<Footer />
+</Layout>
