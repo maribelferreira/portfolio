@@ -32,7 +32,7 @@ import { Image } from 'astro:assets';
 	<ProjectDetails 
 	tools='Figma, FigmaJam, Maze, Illustrator, After Effects, Lottie, Jira, Android Studio. ' 
 	timeline='2024' 
-	role='I led the UX/UI and brand design for Letro, including:'
+	role='I led the end-to-end UX/UI and brand design for Letro, including:'
 	responsibilities={[
         'User research, competitive analysis, and usability testing.',
         'Information architecture and user flows.',
@@ -41,7 +41,7 @@ import { Image } from 'astro:assets';
         'Dev-ready documentation.',
         'Close collaboration with the lead developer to scope the MVP.'
 	]}
-    team='UX/UI Designer, Lead Developer and Android Developer'
+    team='UX/UI Designer, Lead Developer and Android Developer.'
 	overview={[
 		'Letro is an offline alternative to email, designed to circumvent internet shutdowns. Unlike email, Letro offers end-to-end encryption, eliminates phishing and spamming, and users can send and receive messages without access to the Internet.',
 	]}
@@ -67,7 +67,7 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
-                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Goals & objetives</h2>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Project goal</h2>
                 <div>
                   <p>The main goal was to design a messaging experience that not only works intuitively, but also feels trustworthy and a delight to use.
                   </p>
@@ -82,7 +82,7 @@ import { Image } from 'astro:assets';
                 <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Research</h2>
                 
                 <div>
-                  <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users from targeted regions. This revealed crucial insights:
+                  <p>Due to the sensitive nature of the target audience, I conducted anonymous interviews and user testing with proxy users and one real user from targeted regions. This revealed crucial insights:
                   </p>
                   <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
                     <li>Users were familiar with apps such as Gmail and WhatsApp, but often misinterpreted common iconography when not accompanied by text.</li>
@@ -230,13 +230,13 @@ import { Image } from 'astro:assets';
                 </div>
             </div>
             
-            <div class="mt-16 space-y-4">
+            <div class="mt-8 md:mt-16 space-y-4">
                 <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Dark theme</h2>
                 <p>To support user comfort and extend accessibility, I also designed a dark theme. Both light and dark themes adhere to a consistent visual system: clear iconography, generous spacing, and scalable typography, all optimised for low-end Android devices.</p>
                 <Image src={LetroDarkTheme} alt="Natural High Safaris" class="w-full h-auto" />
             </div>
 
-            <div class="mt-16 space-y-4">
+            <div class="mt-8 md:mt-16 space-y-4">
                 <h2 class="text-2xl md:text-4xl font-semibold leading-tight">Google Play Store listing</h2>
                 <p>I also designed the app's Google Play Store listing to reflect the app's core values of privacy, security, and trustworthiness.</p>
                 <Image src={GoogleListings} alt="Natural High Safaris" class="w-full h-auto" />
@@ -244,6 +244,11 @@ import { Image } from 'astro:assets';
             <div class="mt-8 space-y-4">
                 <h3 class="text-2xl md:text-4xl font-semibold leading-tight">Design system</h3>
                 <p>To ensure platform-native usability and speed up development, I followed Material Design guidelines throughout the UI, aligning components and interaction patterns with Android standards.</p>
+            </div>
+            <div class="mt-8 md:mt-12 space-y-4">
+                <h3 class="text-2xl md:text-4xl font-semibold leading-tight">Reflections</h3>
+                <p>Letro was a challenging yet rewarding project that offered significant opportunities for growth. Through user testing of the final prototype, I was able to validate core design assumptions, identify edge cases early, and help align the team around a user-first approach to offline communication. This process reduced risk and laid a strong foundation for future development.
+                </p>
             </div>
         </div>
     </section>
