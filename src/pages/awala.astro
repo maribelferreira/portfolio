@@ -12,6 +12,7 @@ import AwalaNetwork from '../assets/awala-network.gif';
 import AwalaCTA from '../assets/awala-cta.png';
 import AwalaFounder from '../assets/awala-founder.png';
 import AwalaResponsive from '../assets/awala-responsive.png';
+import AwalaWireframes from '../assets/awala-wireframes.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -29,7 +30,7 @@ import { Image } from 'astro:assets';
     team='Product Designer, Tech Lead'
 	timeline='April - June 2024' 
 	role={[
-		'• Lead the end-to-end UX/UI design process, from concept ideation and research market to wireframing, prototyping, visual design, and implementation.', 
+		'• Lead the end-to-end UX/UI design process, from concept ideation and research market to user flows, wireframing, prototyping, visual design, and implementation.', 
         '• Created custom illustrations and animations.',
         '• Communicated design concepts, and rationale effectively to stakeholders.',
         '• Collaborated closely with the Tech Lead to build the responsive multilingual site.',
@@ -70,6 +71,24 @@ import { Image } from 'astro:assets';
             </div>
         </div>
     </section>
+
+<section class="border-t border-neutral-700 py-8 md:py-16">
+    <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-4">Design process</h2>
+                <ul class="list-disc list-outside ml-5 space-y-4">
+                    <li>Conducted user and market research to understand the needs and pain points of the target audience, and identify industry opportunities for differentiation.</li>
+                    <li>Worked closely with key stakeholder to align on the website goals and define the site's information architecture.
+                    <li>Based on research findings, I refined the site map and created low-fidelity wireframes to quickly visualise layout ideas and structure content effectively.</li>
+                    <li>Iterated and refined the design progressively, paving the way for high-fidelity mockups.</li>
+                    <li>Created a design system for the new website, ensuring a consistent and cohesive look and feel.</li>
+                </ul>
+            </div>
+            <Image src={AwalaWireframes} alt="Awala Wireframes" class="w-full h-auto" />
+        </div>
+    </div>
+</section>
 
     <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8 md:space-y-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
@@ -165,7 +184,6 @@ import { Image } from 'astro:assets';
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
 
                     <h2 class="text-2xl md:text-3xl font-semibold">Project outcome</h2>
-                    
 
                 <div>
                     <p>Within six months of launch, site traffic increased by 4X, and user engagement rose by 35%.
