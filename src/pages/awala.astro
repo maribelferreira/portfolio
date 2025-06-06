@@ -13,6 +13,7 @@ import AwalaCTA from '../assets/awala-cta.png';
 import AwalaFounder from '../assets/awala-founder.png';
 import AwalaResponsive from '../assets/awala-responsive.png';
 import AwalaWireframes from '../assets/awala-wireframes.png';
+import AwalaChinese from '../assets/awala-chinese.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -149,6 +150,19 @@ import { Image } from 'astro:assets';
                     
                 </div>
                     <Image src={AwalaFounder} alt="Awala Wireframe" class="w-full h-auto" />
+            </div>
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-16 items-center">
+                <Image src={AwalaChinese} alt="Awala Chinese" class="w-full h-auto" />
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Designed for a multilingual audience</h3>
+                    <p>The website was designed and implemented to support multiple languages. This required careful consideration of layout adaptability, font choices, and language-specific nuances such as text expansion and directionality. </p>
+                    <p>Key UI components were built to dynamically adjust across languages while preserving a consistent user experience.</p>
+                </div>
+                    
             </div>
         </div>
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">    
