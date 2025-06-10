@@ -4,16 +4,17 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import FeaturedAwala from '../assets/featured-awala.png';
-import AwalaOldWebsite from '../assets/awala-old-website.gif';
-import VPNHero from '../assets/vpn-hero.gif';
-import AwalaHero from '../assets/awala-hero.png';
-import AwalaNetwork from '../assets/awala-network.gif';
-import AwalaCTA from '../assets/awala-cta.png';
-import AwalaFounder from '../assets/awala-founder.png';
-import AwalaResponsive from '../assets/awala-responsive.png';
-import AwalaWireframes from '../assets/awala-wireframes.png';
-import AwalaChinese from '../assets/awala-chinese.png';
+import PaperchaseThumbnail from '../assets/paperchase-thumbnail.png';
+import Wireframing from '../assets/wireframing.png';
+import Research from '../assets/research.png';
+import Sitemap from '../assets/sitemap.png';
+import Image01 from '../assets/image1.jpg';
+import Image02 from '../assets/image2.jpg';
+import Image03 from '../assets/image3.jpg';
+import Image04 from '../assets/image4.jpg';
+import Image05 from '../assets/image5.jpg';
+import Image06 from '../assets/image6.png';
+
 import { Image } from 'astro:assets';
 
 ---
@@ -21,22 +22,20 @@ import { Image } from 'astro:assets';
 <Layout title="Paperchase Website Redesign" description="Designed and built a multi-language marketing website for Paperchase, a technology to circumvent Internet censorship, significantly increasing traffic by 4x and user engagement by 20% in 6 months.">
 	<TopNav />
 	<HeroProject 
-		title="Paperchase Website Redesign" 
-		subtitle="Optimised UX & Checkout Flow leading to 20% boost in user engagement & seamless shopping experience."
-		imageSrc={FeaturedAwala}
+		title="Paperchase Website Optimisation" 
+		subtitle="Optimised UX & checkout flow leading to 20% boost in user engagement & seamless shopping experience."
+		imageSrc={PaperchaseThumbnail}
 		imageAlt="Paperchase Website Redesign Hero Image"
 	/>
 	<ProjectDetails 
-	tools='Figma, Maze, Photoshop, Asana.' 
+	tools='Figma, Maze, Photoshop, Asana, Slack, Google Analytics.' 
     team='UX/UI Designer, Project Manager, Web Developer, Content Writer, SEO Specialist'
 	timeline='2021' 
 	role={[
-		'• Lead the end-to-end UX/UI design process, from concept ideation and research market to user flows, wireframing, prototyping, visual design, and implementation.', 
-        '• Created custom illustrations and animations.',
+		'• Lead the UX design process, from concept ideation to final delivery.', 
         '• Communicated design concepts, and rationale effectively to stakeholders.',
-        '• Collaborated closely with the Tech Lead to build the responsive multilingual site.',
-        '• Established and maintained a design system.',
-        '• Co-led the go-to-market (GTM) strategy with a strong focus on SEO.',
+        '• Collaborated closely with the web developer to ensure smooth and high-quality implementation.',
+        '• Established a design system to ensure consistency and scalability across the website.',
 	]}
 	overview={[
 		'Paperchase is a leading stationery retailer with over 125 stores across the UK and international presence in Europe, the USA, and the UAE. The brand sought to revitalise its e-commerce experience to reflect its in-store charm while improving engagement and driving conversions across digital platforms.',
@@ -46,13 +45,9 @@ import { Image } from 'astro:assets';
     <section class="border-t border-neutral-700 py-8 md:py-16">
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16">
-                <div class="space-y-4">
-                    <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Problem statement</h2>
-                    <p>Paperchase’s digital experience failed to reflect the delight and ease of its in-store experience. User engagement was low, and the checkout process had high abandonment rates, leading to missed revenue opportunities.
-                    </p> 
-                </div>
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Problem statement</h2>
                 <div>
-                    <Image src={AwalaOldWebsite} alt="Awala Wireframe" class="w-full h-auto" />
+                    <p>Paperchase’s digital experience failed to reflect the delight and ease of its in-store experience. User engagement was low, and the checkout process had high abandonment rates, leading to missed revenue opportunities.</p>
                 </div>
             </div>
         </div>
@@ -85,14 +80,14 @@ import { Image } from 'astro:assets';
                         <li>Balanced user needs with commercial goals and technical constraints, building a foundation for user-informed decisions.</li>
                     </ul>
                 </div>
-                    <Image src={AwalaHero} alt="Awala Wireframe" class="w-full h-auto" />
+                    <Image src={Research} alt="Research" class="w-full h-auto" />
             </div>
         </div>
 
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-16 items-center">
                 <div class="order-last md:order-first">
-                    <Image src={AwalaNetwork} alt="Awala Network" class="w-full h-auto" />
+                    <Image src={Sitemap} alt="Sitemap" class="w-full h-auto" />
                 </div>
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Define phase</h3>
@@ -106,7 +101,7 @@ import { Image } from 'astro:assets';
             </div>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 mt-16">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Ideation & Design phase</h3>
@@ -118,7 +113,15 @@ import { Image } from 'astro:assets';
                         <li>Worked closely with developers to validate feasibility and scope for MVP and phased releases.</li>
                     </ul>
                 </div>
-                <Image src={AwalaCTA} alt="Awala CTA" class="w-full h-auto" />
+                <Image src={Wireframing} alt="Wireframing" class="w-full h-auto" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4 mt-12">
+                <Image src={Image01} alt="Wireframes" />
+                <Image src={Image02} alt="Wireframes" />
+                <Image src={Image03} alt="Wireframes" />
+                <Image src={Image04} alt="Wireframes" />
+                <Image src={Image05} alt="Wireframes" />
+                <Image src={Image06} alt="Wireframes" />
             </div>
         </div>
     </section>
