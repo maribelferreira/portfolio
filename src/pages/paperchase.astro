@@ -12,7 +12,6 @@ import Image02 from '../assets/image2.jpg';
 import Image03 from '../assets/image3.jpg';
 import Image04 from '../assets/image4.jpg';
 import Image05 from '../assets/image5.jpg';
-import Image06 from '../assets/image6.png';
 import Mapping from '../assets/mapping.png';
 import UserStories from '../assets/user-stories.png';
 import Audience1 from '../assets/audience1.png';
@@ -26,7 +25,18 @@ import UsabilityTest2 from '../assets/usability-test2.png';
 import UsabilityTest3 from '../assets/usability-test3.png';
 import UserJourney from '../assets/user-journey.png';
 import StoryMapping from '../assets/story-mapping.png';
-import UserFlow from '../assets/user-flow.png';
+import Typography1 from '../assets/typography1.png';
+import Typography2 from '../assets/typography2.png';
+import Typography3 from '../assets/typography3.png';
+import ImageryAfter from '../assets/imagery-after.png';
+import UiAudit from '../assets/ui-audit.png';
+import ColorPalette1 from '../assets/color-palette1.png';
+import ColorPalette2 from '../assets/color-palette2.png';
+import ColorPalette3 from '../assets/color-palette3.png';
+import ColorPalette4 from '../assets/color-palette4.png';
+import ImageryBefore from '../assets/imagery-before.png';
+import DesignSystem from '../assets/design-system.png';
+
 
 import { Image } from 'astro:assets';
 
@@ -47,6 +57,21 @@ const defineImages = [
     { src: UsabilityTest, alt: "Usability testing process" },
     { src: UsabilityTest2, alt: "Usability testing 2 process" },
     { src: UsabilityTest3, alt: "Usability testing 3 process" }
+];
+
+const ideationImages = [
+    { src: UiAudit, alt: "UI audit process" },
+    { src: Wireframing, alt: "Wireframing process" },
+    { src: Typography1, alt: "Typography 1 process" },
+    { src: Typography2, alt: "Typography 2 process" },
+    { src: Typography3, alt: "Typography 3 process" },
+    { src: ColorPalette1, alt: "Color palette 1 process" },
+    { src: ColorPalette4, alt: "Color palette 4 process" },
+    { src: ColorPalette2, alt: "Color palette 2 process" },
+    { src: ColorPalette3, alt: "Color palette 3 process" },
+    { src: ImageryBefore, alt: "Imagery before process" },
+    { src: ImageryAfter, alt: "Imagery process" },
+    { src: DesignSystem, alt: "Design system process" },
 ];
 ---
 
@@ -137,7 +162,7 @@ const defineImages = [
         <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 mt-16">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
                 <div class="space-y-4">
-                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Ideation & Design phase</h3>
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Ideate and design phase</h3>
                     <p>With clarity on user needs and business priorities, the design phase focused on elevating the experience:</p>
                     <ul class="list-disc list-outside ml-5 space-y-4">
                         <li>Performed a UI audit to assess consistency, accessibility, and brand alignment.</li>
@@ -146,15 +171,15 @@ const defineImages = [
                         <li>Worked closely with developers to validate feasibility and scope for MVP and phased releases.</li>
                     </ul>
                 </div>
-                <Image src={Wireframing} alt="Wireframing" class="w-full h-auto" />
+                <div class="relative w-full h-auto overflow-hidden rounded-lg">
+                    <ImageSlider images={ideationImages} />
+                </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4 mt-12">
                 <Image src={Image01} alt="Wireframes" />
                 <Image src={Image02} alt="Wireframes" />
                 <Image src={Image03} alt="Wireframes" />
                 <Image src={Image04} alt="Wireframes" />
-                <Image src={Image05} alt="Wireframes" />
-                <Image src={Image06} alt="Wireframes" />
             </div>
         </div>
     </section>
@@ -167,14 +192,12 @@ const defineImages = [
                     <h2 class="text-2xl md:text-3xl font-semibold">Project outcomes</h2>
 
                 <div class="space-y-4">
-                    <p>The redesigned experience delivered clear, measurable improvements:</p>
-                        <ul class="list-disc list-outside ml-5 space-y-4">
-                            <li>20% increase in user engagement through simplified navigation and cleaner UI.</li>
-                            <li>A more intuitive checkout flow, reducing drop-offs and increasing conversions.</li>
-                            <li>Users reported a digital experience that better reflected the delight and brand feel of in-store shopping.</li>
-                            <li>A/B testing and feedback loops validated key design decisions and highlighted successful enhancements.</li>
-                        </ul>
-                        <p>The redesign strengthened Paperchase's digital presence and provided a scalable foundation for future growth. It was a truly collaborative effort that balanced user needs with business impact—driven by research, iteration, and a shared vision across teams.</p>
+                    <p>By enhancing the website experience, simplifying the checkout flow, and optimising the design for conversion, the final solution resulted in a <strong>20% increase in user engagement</strong> and a more intuitive shopping journey.</p>
+                    <ul class="list-disc list-outside ml-5 space-y-4">
+                        <li>Users reported a digital experience that better reflected the delight and brand feel of in-store shopping.</li>
+                        <li>A/B testing and feedback loops validated key design decisions and highlighted successful enhancements.</li>
+                        <li>The redesign strengthened Paperchase's digital presence and provided a scalable foundation for future growth. It was a truly collaborative effort that balanced user needs with business impact—driven by research, iteration, and a shared vision across teams.</li>
+                    </ul>
                 </div>
             </div>
         </div>
