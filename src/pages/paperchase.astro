@@ -36,9 +36,6 @@ import ColorPalette4 from '../assets/color-palette4.png';
 import ImageryBefore from '../assets/imagery-before.png';
 import DesignSystem from '../assets/design-system.png';
 
-
-import { Image } from 'astro:assets';
-
 const discoveryImages = [
     { src: Heatmap, alt: "Heatmap process" },
     { src: Mapping, alt: "Mapping process" },
@@ -104,7 +101,7 @@ const designImages = [
 	]}
 	/>
     <section class="border-t border-neutral-700 py-8 md:py-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16">
                 <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Problem statement</h2>
                 <div>
@@ -115,7 +112,7 @@ const designImages = [
     </section>
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16">
                 <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-2">Goals and objectives</h2>
                 <div>
@@ -126,11 +123,11 @@ const designImages = [
     </section>
 
     <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8 md:space-y-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
 			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Design approach</h2>
 		</div>
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-6 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Discovery phase</h3>
                     <p>The project began by gaining a holistic view of customer pain points and business needs:</p>
@@ -147,11 +144,8 @@ const designImages = [
             </div>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-16 items-center">
-                <div class="relative w-full h-auto overflow-hidden rounded-lg">
-                    <ImageSlider images={defineImages} />
-                </div>
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Define phase</h3>
                     <p>Synthesising our findings helped clarify the core problems and shape the design direction:</p>
@@ -161,11 +155,15 @@ const designImages = [
                         <li>Conducted competitor analysis to benchmark features and usability best practices.</li>
                         <li>Collaborated across departments to align categorisation and taxonomy based on customer expectations.</li>
                     </ul>
+                </div>
+                <div class="relative w-full h-auto overflow-hidden rounded-lg">
+                    <ImageSlider images={defineImages} />
+                </div>
             </div>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8 mt-16">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+        <div class="max-w-screen-2xl mx-auto mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-6 md:gap-16 items-center px-4 md:px-6">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Ideate and design phase</h3>
                     <p>With clarity on user needs and business priorities, the design phase focused on elevating the experience:</p>
@@ -180,7 +178,7 @@ const designImages = [
                     <ImageSlider images={ideationImages} />
                 </div>
             </div>
-            <div class="relative w-full h-auto overflow-hidden rounded-lg mt-16">
+            <div class="relative w-full h-auto overflow-hidden rounded-lg mt-8 md:mt-16 px-4 md:px-6">
                 <ImageSlider images={designImages} />
             </div>
         </div>
@@ -188,7 +186,7 @@ const designImages = [
 
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
-        <div class="max-w-screen-2xl mx-auto sm:px-6 px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
             <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
 
                     <h2 class="text-2xl md:text-3xl font-semibold">Project outcomes</h2>
