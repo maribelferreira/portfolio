@@ -73,6 +73,12 @@ const ideationImages = [
     { src: ImageryAfter, alt: "Imagery process" },
     { src: DesignSystem, alt: "Design system process" },
 ];
+const designImages = [
+    { src: Image01, alt: "Design system process" },
+    { src: Image02, alt: "Imagery before process" },
+    { src: Image03, alt: "Imagery process" },
+    { src: Image04, alt: "Imagery process" },
+];
 ---
 
 <Layout title="Paperchase Website Redesign" description="Designed and built a multi-language marketing website for Paperchase, a technology to circumvent Internet censorship, significantly increasing traffic by 4x and user engagement by 20% in 6 months.">
@@ -175,11 +181,8 @@ const ideationImages = [
                     <ImageSlider images={ideationImages} />
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-screen-2xl mx-auto pb-0 md:pb-4 mt-12">
-                <Image src={Image01} alt="Wireframes" />
-                <Image src={Image02} alt="Wireframes" />
-                <Image src={Image03} alt="Wireframes" />
-                <Image src={Image04} alt="Wireframes" />
+            <div class="relative w-full h-auto overflow-hidden rounded-lg mt-16">
+                <ImageSlider images={designImages} />
             </div>
         </div>
     </section>
