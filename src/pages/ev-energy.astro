@@ -4,7 +4,6 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import EvMockups from '../assets/ev-mockups.png';
 import EvBanner from '../assets/ev-banner.png';
 import SiliconValley from '../assets/silicon-valley.png';
 import Volkswagen from '../assets/volkswagen.png';
@@ -17,12 +16,11 @@ import GooglePlayWhiteLabels from '../assets/google-play-whitelabels.png';
 import ChargeHistory from '../assets/charge-history.png';
 import Incentives from '../assets/incentives.png';
 import VW from '../assets/VW.png';
-import NationalGridWhiteLabel from '../assets/national-grid-white-label.png';
-import SiliconValleyWhiteLabel from '../assets/silicon-valley-white-label.png';
-import MCEWhiteLabel from '../assets/mce-white-label.png';
 import EarthDay from '../assets/earth-day.mp4';
 import InstagramPost from '../assets/instagram-post.png';
 import Gridshift from '../assets/gridshift.png';
+import Infographic from '../assets/infographic.png';
+import NgBanner from '../assets/ng-banner.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -105,6 +103,8 @@ import { Image } from 'astro:assets';
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
                     <Image src={EvBanner} alt="Volkswagen" class="w-full h-auto" />
                     <Image src={SVCEBanner} alt="National Grid" class="w-full h-auto" />
+                    <Image src={NgBanner} alt="National Grid" class="w-full h-auto" />
+                    <Image src={Infographic} alt="Infographic" class="w-full h-auto" />
                 </div>
                 <Image src={GooglePlay} alt="Google Play" class="w-full h-auto mt-4 md:mt-8" />
                 <Image src={GooglePlayWhiteLabels} alt="Google Play White Labels" class="w-full h-auto mt-4 md:mt-8" />
