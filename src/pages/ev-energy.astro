@@ -20,6 +20,9 @@ import VW from '../assets/VW.png';
 import NationalGridWhiteLabel from '../assets/national-grid-white-label.png';
 import SiliconValleyWhiteLabel from '../assets/silicon-valley-white-label.png';
 import MCEWhiteLabel from '../assets/mce-white-label.png';
+import EarthDay from '../assets/earth-day.mp4';
+import InstagramPost from '../assets/instagram-post.png';
+import Gridshift from '../assets/gridshift.png';
 import { Image } from 'astro:assets';
 
 ---
@@ -94,6 +97,11 @@ import { Image } from 'astro:assets';
                     <p>Collaborated closely with the marketing team to design App Store/Google Play assets, marketing landing pages and other visual assets to support go-to-market efforts for ev.energy and its partners and utilities.</p>
                 </div>
 
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+                    <video src={EarthDay} class="w-full h-auto" width="400" height="300" controls muted autoplay loop></video>
+                    <Image src={InstagramPost} alt="Instagram Post" class="w-full h-auto" />
+                </div>
+                <Image src={Gridshift} alt="Gridshift" class="w-full h-auto mt-4 md:mt-8" />
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
                     <Image src={EvBanner} alt="Volkswagen" class="w-full h-auto" />
                     <Image src={SVCEBanner} alt="National Grid" class="w-full h-auto" />
