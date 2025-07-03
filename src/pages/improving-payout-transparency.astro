@@ -4,20 +4,11 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import GoogleListings from '../assets/google-listings.png';
 import LetroFeatured from '../assets/letro-featured.png';
-import SendButton from '../assets/send-button.png';
-import LetroIllustrations from '../assets/letro-illustrations.png';
-import LetroOnboarding from '../assets/letro-onboarding.png';
-import LetroAccount from '../assets/letro-account.png';
-import PairContact from '../assets/pair-contact.png';
-import Accessibility from '../assets/accessibility.png';
-import LetroDarkTheme from '../assets/letro-dark-theme.png';
-import OfflineExperience from '../assets/offline-experience.png';
-import AccountCreation from '../assets/account-creation.gif';
-import AwalaConection from '../assets/awala-conection.gif';
-
-
+import PayoutEvenergy from '../assets/payout-evenergy.png';
+import Screen1 from '../assets/screen1.png';
+import Screen2 from '../assets/screen2.png';
+import Screen3 from '../assets/screen3.png';
 import { Image } from 'astro:assets';
 ---
 
@@ -26,8 +17,8 @@ import { Image } from 'astro:assets';
 	<HeroProject 
 		title="Improving payout transparency" 
 		subtitle="Building user trust with a clear reward status system in the ev.energy app"
-		imageSrc={LetroFeatured}
-		imageAlt="Letro Hero Image"
+		imageSrc={PayoutEvenergy}
+		imageAlt="Payout Evenergy"
 	/>
 	<ProjectDetails 
 	tools='Figma, FigmaJam, Maze, Jira, Android Studio. ' 
@@ -103,20 +94,20 @@ import { Image } from 'astro:assets';
         <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
 			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Design challenges</h2>
 		</div>
-        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Simplifying complexity</h3>
                     <p>The backend contained 7+ payout states with subtle differences. I worked with engineering to simplify this logic into clear, user-facing messages like "Your payout was sent" or "We tried to send your payout" with relevant actions (e.g. confirm your PayPal).</p>                </div>
                 <div>
-                    <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={Screen3} alt="Natural High Safaris" class="w-2/3 h-auto" />
                 </div>
             </div>
         </div>
-        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
                 <div>
-                    <Image src={LetroAccount} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={Screen2} alt="Natural High Safaris" class="w-2/3 h-auto" />
                 </div>
                 <div class="space-y-4 order-first md:order-last">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Supporting multiple program types</h3>
@@ -125,14 +116,14 @@ import { Image } from 'astro:assets';
                </div>
             </div>
         </div>
-        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-16 items-center">
                 <div class="space-y-4">
                     <h3 class="text-xl md:text-[1.6rem] font-semibold">Creating a flexible component</h3>
                     <p>Using our design system, I created a scalable component that supported payout status, dates, optional action buttons, and contextual helper text. This design worked across mobile apps, the web portal, and internal admin views.</p>
                 </div>
                 <div>
-                    <Image src={OfflineExperience} alt="Natural High Safaris" class="w-full h-auto" />
+                    <Image src={Screen1} alt="Natural High Safaris" class="w-2/3 h-auto" />
                 </div>
             </div>
         </div>
