@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import GoogleListings from '../assets/google-listings.png';
+import LetroFeatured from '../assets/letro-featured.png';
+import SendButton from '../assets/send-button.png';
+import LetroIllustrations from '../assets/letro-illustrations.png';
+import LetroOnboarding from '../assets/letro-onboarding.png';
+import LetroAccount from '../assets/letro-account.png';
+import PairContact from '../assets/pair-contact.png';
+import Accessibility from '../assets/accessibility.png';
+import LetroDarkTheme from '../assets/letro-dark-theme.png';
+import OfflineExperience from '../assets/offline-experience.png';
+import AccountCreation from '../assets/account-creation.gif';
+import AwalaConection from '../assets/awala-conection.gif';
+
+
+import { Image } from 'astro:assets';
+---
+
+<Layout title="Improving payout transparency" description="Building user trust with a clear reward status system at ev.energy">
+	<TopNav />
+	<HeroProject 
+		title="Improving payout transparency" 
+		subtitle="Building user trust with a clear reward status system in the ev.energy app"
+		imageSrc={LetroFeatured}
+		imageAlt="Letro Hero Image"
+	/>
+	<ProjectDetails 
+	tools='Figma, FigmaJam, Maze, Jira, Android Studio. ' 
+	timeline='2022' 
+    platform='Android, iOS'
+	role='I led the end-to-end UX/UI design process, including:'
+	responsibilities={[
+        'Mapping backend payout states into clear, human-readable statuses.',
+        'Writing intuitive labels and helper text with customer support and content leads.',
+        'Designing reusable UI components with dynamic CTAs, icons, and dates.',
+        'Working closely with engineering, product, and comms tooling teams for implementation. ',
+        'Validating designs through support agent feedback and user testing.',
+	]}
+    team='Product Designer, Customer Support, Commercial team, Engineering.'
+	overview={[
+		' ev.energy is a mobile app that helps EV drivers earn rewards by charging during off-peak hours. As support tickets around payouts spiked and utility partners raised concerns, we identified a trust gap caused by a lack of payout visibility. This project focused on designing a clear, scalable payout status system to improve transparency and reduce confusion.',
+	]}
+	liveUrl='https://www.ev.energy/en-gb'
+	buttonText='Learn more about ev.energy'
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Problem statement</h2>
+                <div class="space-y-6">
+                    <p>
+                        The customer support team identified a 35% increase in payout-related tickets, even though no system errors or regressions had occurred. To investigate further, a cross-functional effort was launched: over 40 anonymized support tickets were reviewed, the backend admin panel logic was audited with engineering, and the live app UI was assessed from a user perspective.
+                    </p>
+                    <p>A clear pattern emerged: users couldn't see the status of their rewards, weren't sure if payouts had been sent, and often didn't know if any action was required on their part.</p>
+                    <p>Meanwhile, the commercial team relayed concerns from utility partners, who were beginning to question the reliability of our incentive system due to ongoing user confusion. Together, these findings pointed to a key opportunity: a small UI improvement could deliver significant gains in user trust and partner confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Goal</h2>
+                <div>
+                  <p>Design a payout status system that:</p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                    <li>Clearly communicates payout progress and builds user confidence.</li>
+                    <li>Reduces support ticket volume.</li>
+                    <li>Adapts to multiple payout systems and program types (e.g. monthly, real-time).</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">User insight</h2>
+                
+                <div>
+                  <p>Working with the customer support and data teams, we segmented the users most impacted by payout confusion. We focused on three key groups:
+                  </p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                    <li>High-engagement users enrolled in smart charging programs.</li>
+                    <li>US-based users using common payout methods like PayPal and Venmo.</li>
+                    <li>Newly enrolled users unfamiliar with our rewards system.</li>
+                  </ul>
+                  <p class="mt-6">These were some of our most valuable users, and the ones most affected by the lack of transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16 space-y-8">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+			<h2 class="text-3xl md:text-[2.5rem] font-semibold text-center mb-8 md:mb-16">Design challenges</h2>
+		</div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Simplifying complexity</h3>
+                    <p>The backend contained 7+ payout states with subtle differences. I worked with engineering to simplify this logic into clear, user-facing messages like "Your payout was sent" or "We tried to send your payout" with relevant actions (e.g. confirm your PayPal).</p>                </div>
+                <div>
+                    <Image src={LetroOnboarding} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[3fr_3fr] gap-8 md:gap-16 items-center">
+                <div>
+                    <Image src={LetroAccount} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+                <div class="space-y-4 order-first md:order-last">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold leading-tight">Supporting multiple program types</h3>
+                    <p>Some programs paid monthly, others paid instantly. I ensured the system could support both fixed and rolling payout logic, while keeping the design consistent and agnostic to local program naming.
+                    </p>
+               </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-xl md:text-[1.6rem] font-semibold">Creating a flexible component</h3>
+                    <p>Using our design system, I created a scalable component that supported payout status, dates, optional action buttons, and contextual helper text. This design worked across mobile apps, the web portal, and internal admin views.</p>
+                </div>
+                <div>
+                    <Image src={OfflineExperience} alt="Natural High Safaris" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Validation</h2>
+                <div>
+                  <p>To ensure clarity and tone, I tested five copy variants with support agents and ran quick Maze tests with users to confirm comprehension. Over 90% of users correctly understood the new labels. Final messaging was reviewed with legal and comms to ensure compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Outcome</h2>
+                <div>
+                  <p> Within 4 weeks of launch, we saw:</p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                    <li>34% reduction in payout-related support tickets.</li>
+                    <li>14% increase in successful payouts among eligible users.</li>
+                    <li>18% increase in CSAT for reward-related interactions.</li>
+                    <li>2-minute decrease in average support ticket resolution time.</li>
+                  </ul>
+                  <p class="mt-6">One support agent put it simply:</p>
+                  <blockquote class="mt-8 pl-4 border-l-2 border-neutral-500 italic text-neutral-300">
+                    "It’s a huge relief to be able to say, ‘You can check that in the app now.’ Before, we had to explain every edge case manually."
+                  </blockquote>
+                  <p class="mt-8">Business impact:</p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                      <li>Improved retention in our highest-value utility programs.</li>
+                      <li>Reduced operational friction during peak payout cycles.</li>
+                      <li>Positioned the product for international expansion through early localisation and scalable status logic.</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<Footer />
+</Layout>
