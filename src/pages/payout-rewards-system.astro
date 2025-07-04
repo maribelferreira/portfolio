@@ -4,7 +4,6 @@ import HeroProject from '../components/HeroProject.astro';
 import Footer from '../components/Footer.astro';
 import TopNav from '../components/TopNav.astro';
 import ProjectDetails from '../components/ProjectDetails.astro';
-import LetroFeatured from '../assets/letro-featured.png';
 import PayoutEvenergy from '../assets/payout-evenergy.png';
 import Screen1 from '../assets/screen1.png';
 import Screen2 from '../assets/screen2.png';
@@ -34,10 +33,8 @@ import { Image } from 'astro:assets';
 	]}
     team='Product Designer, Customer Support, Commercial team, Engineering.'
 	overview={[
-		' ev.energy is a mobile app that helps EV drivers earn rewards by charging during off-peak hours. As support tickets around payouts spiked and utility partners raised concerns, we identified a trust gap caused by a lack of payout visibility. This project focused on designing a clear, scalable payout status system to improve transparency and reduce confusion.',
+		'<a href="https://www.ev.energy/" target="_blank" class="text-indigo-400 hover:underline">ev.energy</a> is a mobile app that helps EV drivers earn rewards by charging during off-peak hours. As support tickets around payouts spiked and utility partners raised concerns, we identified a trust gap caused by a lack of payout visibility. This project focused on designing a clear, scalable payout status system to improve transparency and reduce confusion.',
 	]}
-	liveUrl='https://www.ev.energy/en-gb'
-	buttonText='Learn more about ev.energy'
 	/>
 
     <section class="border-t border-neutral-700 py-8 md:py-16">
