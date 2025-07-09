@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroProject from '../components/HeroProject.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/TopNav.astro';
+import ProjectDetails from '../components/ProjectDetails.astro';
+import PayoutEvenergy from '../assets/payout-evenergy.png';
+import Research1 from '../assets/research1.png';
+import Research2 from '../assets/research2.png';
+import Wireframe1 from '../assets/wireframe1.png';
+import Wireframe2 from '../assets/wireframe2.png';
+import FleetOnboarding from '../assets/fleet-onboarding.png';
+import FleetDashboardImage from '../assets/fleet-dashboard.png';
+import ImageSlider from '../components/ImageSlider.astro';
+import { Image } from 'astro:assets';
+
+const researchImages = [
+    { src: Research1, alt: "Research 1" },
+    { src: Research2, alt: "Research 2" }
+];
+
+const designProcessImages = [
+    { src: Wireframe2, alt: "Wireframe 2" },
+    { src: Wireframe1, alt: "Wireframe 1" }
+];
+---
+
+
+<Layout title="B2B EV onboarding for fleet managers" description="Led the redesign of the EV onboarding flow in ev.energy’s B2B fleet dashboard, leading to a 30% increase in user satisfaction and a 35% decrease in onboarding time.">
+	<TopNav />
+	<HeroProject 
+		title="B2B EV onboarding for fleet managers" 
+		subtitle="Led the redesign of the EV onboarding flow in ev.energy’s B2B fleet dashboard, leading to a 30% increase in user satisfaction and a 35% decrease in onboarding time."
+		imageSrc={FleetDashboardImage}
+		imageAlt="Fleet Dashboard"
+	/>
+	<ProjectDetails 
+	tools='Figma, FigmaJam, Miro, Maze, Jira, Google Analytics, Hotjar'
+	timeline='2022' 
+    platform='Web dashboard'
+	role='I led the end-to-end UX/UI design process, including:'
+	responsibilities={[
+    'Conducting user research with fleet managers to identify onboarding pain points.',
+    'Mapping the current multi-system flow and designing a unified onboarding experience.',
+    'Creating wireframes and prototypes for streamlined vehicle connection processes.',
+    'Designing clear data visualization and explanation components for first-time users.',
+    'Building utility program tracking workflows that ensure accurate enrollment status.',
+    'Collaborating with engineering and product teams on technical feasibility and implementation.',
+    'Testing prototypes with fleet managers and iterating based on feedback.',
+]}
+    team='Product Designer, Product Manager, Fleet Operations, Engineering, Customer Success'
+	overview={[
+    'Fleet managers struggled with a complex onboarding process that made vehicle connection, data understanding, and utility program tracking difficult.',
+    'I redesigned the experience into a streamlined single-flow process that guides managers through setup with clear explanations and accurate tracking from day one.',
+]}
+	/>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Problem statement</h2>
+                <div class="space-y-6">
+                    <p>
+                        Fleet managers face significant inefficiencies in the onboarding and monitoring process for vehicles in the ConEd SCNY program.
+                    </p>
+                    <p>Key issues include:</p>
+                    <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                        <li>Vehicle data is unintuitive and often inaccurate.</li>
+                        <li>Lack of clear telemetry data status, causing fleet managers to miss when telemetry access is lost.</li>
+                        <li>Utility program participation status is missing, making it difficult for fleet managers to track program participation.</li>
+                        <li>Vehicles are hard to identify, slowing down workflow and creating errors in fleet management.</li>
+                    </ul>                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Project goal</h2>
+                <div>
+                  <p>The goal was to onboard new vehicles more efficiently with streamlined data relationships and create a functional vehicle listing page that provides clear data and easy identification for fleet managers.</p>
+                  <p>Key metrics to measure success:</p>
+                  <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                    <li>Decrease the time required to onboard a vehicle by 30%.</li>
+                    <li>Increase user satisfaction with the vehicle list page by 25% (measured through user surveys and feedback).</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-4">Research</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-4">
+                        <li>User Interviews: Conducted 5+ interviews with fleet managers to understand key frustrations.</li>
+                        <li>Telemetry & onboarding workflow analysis: Mapped current processes to identify major gaps in data visibility and usability.</li>
+                        <li>Benchmarking: Studied 3 competitor fleet management platforms to identify best practices in vehicle listing, onboarding, and telemetry data presentation.</li>
+                    </ul>
+                </div>
+                <ImageSlider images={researchImages} />
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-4">Design Process & Iteration</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-4">
+                        <li>Ideation: Brainstormed solutions for data clarity and improved vehicle identification. Focused on simple, intuitive design changes.</li>
+                        <li>Wireframing & Prototyping: Developed low-fidelity wireframes for rapid iteration based on early feedback.</li>
+                        <li>Usability Testing: Conducted 3 rounds of testing with fleet managers to validate and refine the design, ensuring all key features were met.</li>
+                    </ul>
+                </div>
+                <ImageSlider images={designProcessImages} />
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto sm:px-6 px-4 lg:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-2 md:gap-16 items-center">
+                <div class="space-y-4">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold pb-4">Improvements</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-4">
+                        <li>Onboarding Workflow: Streamlined data relationships between B2B organisations, vehicles, and users to improve vehicle onboarding speed.</li>
+                        <li>Vehicle Identification: Added vehicle names and make logos for easier identification.
+                        <li>Telemetry Data Visibility: Introduced clear indicators showing when telemetry data is lost.</li>
+                        <li>Utility Program Participation: Added an indicator to clearly show which vehicles are part of a utility program.</li>
+                        <li>Intuitive Data Presentation: Redesigned the Vehicle Data column for better clarity and usability.</li>
+                    </ul>
+                </div>
+                <Image src={FleetOnboarding} alt="Fleet Onboarding" class="w-full h-auto" />
+        </div>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 items-center">
+                <Image src={FleetDashboardImage} alt="Fleet Dashboard" class="w-full h-auto" />
+            </div>
+    </section>
+
+    <section class="border-t border-neutral-700 py-8 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-8">
+                    <h2 class="text-2xl md:text-[2.5rem] font-semibold leading-tight">Outcome</h2>
+                <div class="space-y-6">
+                    <ul class="list-disc list-outside space-y-2 ml-4 mt-6">
+                        <li>+30% increase in user satisfaction, exceeding the 25% target.</li>
+                        <li>35% faster onboarding, meeting the efficiency goal.</li>
+                        <li>95% accuracy in program tracking, up from 70%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<Footer />
+</Layout>
