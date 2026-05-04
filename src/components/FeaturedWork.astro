@@ -10,7 +10,7 @@ import LunariImage from '../assets/lunari.png';
 import PayoutThumbnail from '../assets/payout-thumbnail.png';
 import LetroThumbnailBig from '../assets/letro-thumbnail-big.png';
 import FleetDashboardThumbnail from '../assets/fleet-dashboard-thumbnail.png'; 
-import LunariThumbnail from '../assets/lunari-thumbnail.png';
+import LunariThumbnail from '../assets/bill-split.png';
 ---
 
 <section class="py-12 md:py-16 lg:py-20 px-4 md:px-6" id="work">
@@ -103,18 +103,6 @@ import LunariThumbnail from '../assets/lunari-thumbnail.png';
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-screen-2xl mx-auto">
   
-      <a href="https://github.com/maribelferreira/Lunari/" class="overflow-hidden group" target="_blank" >
-        <div class="overflow-hidden rounded-2xl md:rounded-3xl">
-          <Image 
-            src={LunariThumbnail}
-            alt="Bento-ya project" 
-            class="w-full transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
-        <h3 class="mt-6 text-2xl font-semibold">Lunari (WIP)</h3>
-        <p class="text-md lg:text-lg font-regular my-2 leading-normal">Currently developing an open-source, privacy-first period tracking app with local-only data storage.</p>
-      </a>
-  
       <a href="https://github.com/maribelferreira/ai-recipe-generator" class="overflow-hidden group" target="_blank">
         <div class="overflow-hidden rounded-2xl md:rounded-3xl">
           <Image 
@@ -126,6 +114,7 @@ import LunariThumbnail from '../assets/lunari-thumbnail.png';
         <h3 class="mt-6 text-2xl font-semibold">AI recipes generator web app</h3>
         <p class="text-md lg:text-lg font-regular my-2 leading-normal">Created an AI recipe generator that integrates GPT-4 to generate recipes.</p>
       </a>
+
       <a href="https://github.com/maribelferreira/weather-web-app" class="overflow-hidden group" target="_blank">
         <div class="overflow-hidden rounded-2xl md:rounded-3xl">
           <Image 
@@ -136,6 +125,18 @@ import LunariThumbnail from '../assets/lunari-thumbnail.png';
         </div>
         <h3 class="mt-6 text-2xl font-semibold">Weather Web App</h3>
         <p class="text-md lg:text-lg font-regular my-2 leading-normal">Built a dynamic web application that provides real-time weather information.</p>
+      </a>
+
+      <a href="#" class="overflow-hidden group" target="_blank" >
+        <div class="overflow-hidden rounded-2xl md:rounded-3xl">
+          <Image 
+            src={LunariThumbnail}
+            alt="Bento-ya project" 
+            class="w-full transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <h3 class="mt-6 text-2xl font-semibold">Lunari (WIP)</h3>
+        <p class="text-md lg:text-lg font-regular my-2 leading-normal">A simple web app designed to streamline bill splitting with friends and family.</p>
       </a>
     </div>
   </section>
